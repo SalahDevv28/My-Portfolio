@@ -129,8 +129,7 @@ export async function getCaseStudyBySlug(slug: string): Promise<CaseStudy> {
     teamSize: data.teamSize || 1,
     date: data.date,
     content: contentHtml,
-  }
-
+   }
   return caseStudy
 }
 
