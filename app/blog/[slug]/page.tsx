@@ -52,7 +52,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
 
   const allPosts = getAllPosts()
   const relatedPosts = allPosts
-    .filter((p) => p.slug !== post.slug && (p.category === post.category || p.tags.some(tag => post.tags.includes(tag))))
+    .filter((p) => p.slug !== post.slug && (p.category === post.category || p.tags.some((tag: string) => post.tags.includes(tag))))
     .slice(0, 3)
 
   const shareUrl = `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/blog/${post.slug}`

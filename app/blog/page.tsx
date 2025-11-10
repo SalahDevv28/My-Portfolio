@@ -19,8 +19,8 @@ export default async function BlogPage({
 }) {
   const allPosts = getAllPosts()
   const categories = getAllCategories()
-  const searchQuery = searchParams.search as string
-  const selectedCategory = searchParams.category as string
+  const searchQuery = typeof searchParams.search === 'string' ? searchParams.search : undefined
+  const selectedCategory = typeof searchParams.category === 'string' ? searchParams.category : undefined
 
   // Filter posts based on search and category
   let filteredPosts = allPosts
@@ -30,7 +30,7 @@ export default async function BlogPage({
       post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.category.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      post.tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase()))
+      post.tags.some((tag: string) => tag.toLowerCase().includes(searchQuery.toLowerCase()))
     )
   }
 

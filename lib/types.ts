@@ -39,16 +39,17 @@ export interface BlogPost {
 export interface CaseStudy {
   slug: string
   title: string
+  date: string
   client: string
+  category?: string
+  featuredImage?: string
   description: string
-  challenge: string
-  solution: string
-  results: string[]
-  technologies: string[]
-  images: string[]
-  category: string
-  duration: string
-  teamSize: number
-  date?: string
-  content?: string
+  technicalStack: string[]
+  outcomes: string[]
+  testimonial?: {
+    author: string
+    role: string
+    content: string
+  }
+  content: string
 }

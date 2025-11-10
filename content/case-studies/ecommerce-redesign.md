@@ -1,32 +1,16 @@
 ---
-title: "E-Commerce Platform Redesign"
+title: "E-Commerce Platform Redesign for TechStyle Fashion"
+date: "2024-11-08"
 client: "TechStyle Fashion"
-description: "Complete redesign and modernization of a fashion e-commerce platform, resulting in 40% increase in conversions and 60% improvement in page load times."
-challenge: "TechStyle Fashion was struggling with an outdated e-commerce platform that had poor user experience, slow loading times, and high cart abandonment rates. The existing system was unable to handle mobile traffic effectively and lacked modern payment options."
-solution: "We completely rebuilt their e-commerce platform using Next.js, TypeScript, and modern payment processing. We implemented a headless CMS, integrated advanced search functionality, and created a mobile-first design that significantly improved user engagement."
-results:
-  - 40% increase in conversion rate
-  - 60% improvement in page load times
-  - 25% reduction in cart abandonment
-  - 200% increase in mobile sales
-  - Improved SEO scores across all pages
-  - Enhanced admin dashboard for content management
-technologies:
-  - Next.js 14
-  - TypeScript
-  - Tailwind CSS
-  - Stripe Payment Processing
-  - Sanity CMS
-  - AWS Lambda
-  - Redis Caching
-  - Vercel Deployment
-images:
-  - "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop"
-  - "https://images.unsplash.com/photo-1556742111-a301076d9d18?w=800&h=600&fit=crop"
-  - "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=800&h=600&fit=crop"
 category: "E-Commerce"
-duration: "6 months"
-teamSize: 4
+featuredImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop"
+description: "Complete redesign and modernization of a fashion e-commerce platform, resulting in 40% increase in conversions and 60% improvement in page load times."
+technicalStack: ["Next.js 14", "TypeScript", "Tailwind CSS", "Stripe", "Sanity CMS", "Vercel"]
+outcomes: ["40% increase in conversion rate", "60% improvement in page load times", "25% reduction in cart abandonment", "200% increase in mobile sales", "Improved SEO scores across all pages"]
+testimonial:
+  author: "Sarah Chen"
+  role: "CTO, TechStyle Fashion"
+  content: "Sybil Solutions transformed our outdated e-commerce platform into a modern, lightning-fast application. Our conversion rate increased by 40% within the first month, and the mobile experience is now industry-leading."
 ---
 
 # E-Commerce Platform Redesign for TechStyle Fashion
@@ -62,7 +46,6 @@ We chose a modern, scalable technology stack that would future-proof their platf
 - **Styling**: Tailwind CSS for rapid, consistent design
 - **Content Management**: Sanity CMS for flexible content management
 - **Payment Processing**: Stripe for secure, modern payment options
-- **Caching**: Redis for improved performance
 - **Hosting**: Vercel for global distribution and automatic scaling
 
 ### Key Features Implemented
@@ -89,12 +72,6 @@ We chose a modern, scalable technology stack that would future-proof their platf
 - Image optimization and lazy loading
 - Code splitting and bundle optimization
 - CDN integration for global content delivery
-
-#### 5. Admin Dashboard
-- Intuitive content management interface
-- Real-time analytics and reporting
-- Inventory management tools
-- Order processing automation
 
 ## Results & Impact
 

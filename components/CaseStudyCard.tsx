@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Calendar, Clock, Users, ArrowRight, Building } from 'lucide-react'
+import { Calendar, Building, Clock, Target, Tag } from 'lucide-react'
 import { CaseStudy } from '@/lib/types'
 
 interface CaseStudyCardProps {
@@ -9,19 +9,21 @@ interface CaseStudyCardProps {
 export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
   return (
     <article className="card group hover:scale-105 transition-all duration-300 h-full flex flex-col">
-      {caseStudy.images && caseStudy.images.length > 0 && (
+      {caseStudy.featuredImage && (
         <div className="relative h-48 mb-6 overflow-hidden rounded-lg">
           <img
-            src={caseStudy.images[0]}
+            src={caseStudy.featuredImage}
             alt={caseStudy.title}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-          <div className="absolute bottom-4 left-4">
-            <span className="inline-block px-3 py-1 bg-purple-600/80 text-white text-xs rounded-full backdrop-blur-sm">
-              {caseStudy.category}
-            </span>
-          </div>
+          {caseStudy.category && (
+            <div className="absolute bottom-4 left-4">
+              <span className="inline-block px-3 py-1 bg-purple-600/80 text-white text-xs rounded-full backdrop-blur-sm">
+                {caseStudy.category}
+              </span>
+            </div>
+          )}
         </div>
       )}
       
@@ -30,6 +32,10 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
           <div className="flex items-center space-x-2 text-sm text-gray-400 mb-2">
             <Building className="w-4 h-4" />
             <span>{caseStudy.client}</span>
+          </div>
+          <div className="flex items-center space-x-1 text-sm text-gray-400">
+            <Calendar className="w-4 h-4" />
+            <span>{new Date(caseStudy.date).toLocaleDateString()}</span>
           </div>
         </div>
         
@@ -43,44 +49,34 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
           {caseStudy.description}
         </p>
         
-        <div className="flex items-center space-x-4 text-sm text-gray-500 mb-4">
-          <div className="flex items-center space-x-1">
-            <Clock className="w-4 h-4" />
-            <span>{caseStudy.duration}</span>
-          </div>
-          <div className="flex items-center space-x-1">
-            <Users className="w-4 h-4" />
-            <span>{caseStudy.teamSize} team</span>
-          </div>
-        </div>
-        
         <div className="flex flex-wrap gap-2 mb-4">
-          {caseStudy.technologies.slice(0, 3).map((tech) => (
+          {caseStudy.technicalStack.slice(0, 3).map((tech) => (
             <span
               key={tech}
-              className="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded-md"
+              className="inline-flex items-center space-x-1 px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded-md"
             >
-              {tech}
+              <Tag className="w-3 h-3" />
+              <span>{tech}</span>
             </span>
           ))}
-          {caseStudy.technologies.length > 3 && (
+          {caseStudy.technicalStack.length > 3 && (
             <span className="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded-md">
-              +{caseStudy.technologies.length - 3} more
+              +{caseStudy.technicalStack.length - 3} more
             </span>
           )}
         </div>
         
         <div className="flex items-center justify-between pt-4 border-t border-gray-800">
-          <div className="text-sm text-gray-400">
-            {caseStudy.category}
+          <div className="flex items-center space-x-1 text-sm text-gray-400">
+            <Target className="w-4 h-4" />
+            <span>{caseStudy.outcomes.length} outcomes</span>
           </div>
           
           <Link
             href={`/case-studies/${caseStudy.slug}`}
-            className="text-purple-400 hover:text-purple-300 text-sm font-medium transition-colors inline-flex items-center space-x-1"
+            className="text-purple-400 hover:text-purple-300 text-sm font-medium transition-colors"
           >
-            <span>View Case Study</span>
-            <ArrowRight className="w-4 h-4" />
+            View Case Study →
           </Link>
         </div>
       </div>

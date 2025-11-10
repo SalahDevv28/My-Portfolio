@@ -6,17 +6,11 @@ import { CaseStudy } from './lib/types'
 const caseStudyExample: CaseStudy = {
   slug: 'test-case-study',
   title: 'Test Case Study',
+  date: '2025-01-15',
   client: 'Test Client',
   description: 'This is a test case study description',
-  challenge: 'The main challenge was to demonstrate proper type usage',
-  solution: 'We fixed the type vs value issue in the code',
-  results: ['Improved type safety', 'Fixed compilation errors'],
-  technologies: ['TypeScript', 'Next.js'],
-  images: ['/images/test1.jpg', '/images/test2.jpg'],
-  category: 'Web Development',
-  duration: '3 months',
-  teamSize: 5,
-  date: '2025-01-15',
+  technicalStack: ['TypeScript', 'Next.js', 'Tailwind CSS'],
+  outcomes: ['Improved type safety', 'Fixed compilation errors', 'Enhanced user experience'],
   content: 'Full case study content here...'
 }
 
@@ -30,16 +24,12 @@ function getCaseStudyTemplate(): CaseStudy {
   return {
     slug: '',
     title: '',
+    date: '',
     client: '',
     description: '',
-    challenge: '',
-    solution: '',
-    results: [],
-    technologies: [],
-    images: [],
-    category: '',
-    duration: '',
-    teamSize: 0
+    technicalStack: [],
+    outcomes: [],
+    content: ''
   }
 }
 
