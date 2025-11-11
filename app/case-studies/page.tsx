@@ -32,7 +32,7 @@ export default function CaseStudiesPage({
 
   return (
     <div className="min-h-screen pt-16">
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 px-6 lg:px-24">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-background to-accent-900/20"></div>
         <div className="max-w-7xl mx-auto relative">
           <div className="text-center">
@@ -46,7 +46,7 @@ export default function CaseStudiesPage({
         </div>
       </section>
 
-      <section className="py-8 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
+      <section className="py-8 px-6 lg:px-24 bg-gray-900/30">
         <div className="max-w-7xl mx-auto">
           <form action="/case-studies" method="get" className="flex flex-col lg:flex-row gap-6 items-center justify-between">
             <div className="relative flex-1 max-w-md">
@@ -80,7 +80,7 @@ export default function CaseStudiesPage({
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 px-6 lg:px-24">
         <div className="max-w-7xl mx-auto">
           {filteredCaseStudies.length === 0 ? (
             <div className="text-center py-16">

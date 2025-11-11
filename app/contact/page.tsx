@@ -65,7 +65,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 px-6 lg:px-24">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-background to-accent-900/20"></div>
         <div className="max-w-7xl mx-auto relative">
           <div className="text-center">
@@ -80,7 +80,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form and Info */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 px-6 lg:px-24">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}

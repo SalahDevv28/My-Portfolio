@@ -41,7 +41,7 @@ export default async function BlogPage({
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 px-6 lg:px-24">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-background to-accent-900/20"></div>
         <div className="max-w-7xl mx-auto relative">
           <div className="text-center">
@@ -56,7 +56,7 @@ export default async function BlogPage({
       </section>
 
       {/* Search and Filter Section */}
-      <section className="py-8 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
+      <section className="py-8 px-6 lg:px-24 bg-gray-900/30">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row gap-6 items-center justify-between">
             <BlogSearch />
@@ -66,7 +66,7 @@ export default async function BlogPage({
       </section>
 
       {/* Blog Posts Grid */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 px-6 lg:px-24">
         <div className="max-w-7xl mx-auto">
           {filteredPosts.length === 0 ? (
             <div className="text-center py-16">
@@ -98,7 +98,7 @@ export default async function BlogPage({
       </section>
 
       {/* Newsletter CTA */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-900/20 to-accent-900/20">
+      <section className="py-16 px-6 lg:px-24 bg-gradient-to-r from-purple-900/20 to-accent-900/20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
             Stay Updated

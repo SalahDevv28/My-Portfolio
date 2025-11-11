@@ -127,7 +127,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 px-6 lg:px-24">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-background to-accent-900/20"></div>
         <div className="max-w-7xl mx-auto relative">
           <div className="text-center">
@@ -143,7 +143,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
+      <section className="py-16 px-6 lg:px-24 bg-gray-900/30">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {benefits.map((benefit) => {
@@ -172,7 +172,7 @@ export default function ServicesPage() {
       {services.map((service, index) => {
         const Icon = service.icon
         return (
-          <section key={service.id} className={`py-20 px-4 sm:px-6 lg:px-8 ${index % 2 === 1 ? 'bg-gray-900/30' : ''}`}>
+          <section key={service.id} className={`py-20 px-6 lg:px-24 ${index % 2 === 1 ? 'bg-gray-900/30' : ''}`}>
             <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 <div>
@@ -247,7 +247,7 @@ export default function ServicesPage() {
       })}
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-900/20 to-accent-900/20">
+      <section className="py-20 px-6 lg:px-24 bg-gradient-to-r from-purple-900/20 to-accent-900/20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
             Ready to Start Your Project?

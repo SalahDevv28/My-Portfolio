@@ -174,7 +174,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center px-6 lg:px-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black to-blue-900/20"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(120,119,198,0.1),transparent_50%)]"></div>
         
@@ -210,7 +210,7 @@ export default function HomePage() {
 
       {/* Stats Section */}
       <section className="py-16 bg-black/30 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-24">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => {
               const Icon = stat.icon
@@ -229,7 +229,7 @@ export default function HomePage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 px-6 lg:px-24">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
@@ -289,7 +289,7 @@ export default function HomePage() {
       <SectionDivider variant="accent" />
 
       {/* Testimonials Carousel Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black/30 backdrop-blur-sm">
+      <section className="py-20 px-6 lg:px-24 bg-black/30 backdrop-blur-sm">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
@@ -362,7 +362,7 @@ export default function HomePage() {
       <SectionDivider variant="subtle" />
 
       {/* Partners Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 px-6 lg:px-24">
         <div className="max-w-7xl mx-auto text-center">
           <h3 className="text-2xl font-bold text-white mb-12">
             Trusted by Leading Companies
@@ -374,7 +374,7 @@ export default function HomePage() {
       <SectionDivider variant="default" />
 
       {/* Newsletter Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-900/20 to-pink-900/20">
+      <section className="py-20 px-6 lg:px-24 bg-gradient-to-r from-purple-900/20 to-pink-900/20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
             <Mail className="w-12 h-12 text-purple-400 mx-auto mb-6" />
