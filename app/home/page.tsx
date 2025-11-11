@@ -2,14 +2,14 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { 
-  ArrowRight, 
-  Code, 
-  Server, 
-  Bot, 
-  Search, 
-  Star, 
-  Users, 
+import {
+  ArrowRight,
+  Code,
+  Server,
+  Bot,
+  Search,
+  Star,
+  Users,
   Award,
   Zap,
   ChevronLeft,
@@ -17,6 +17,8 @@ import {
   Mail,
   CheckCircle
 } from 'lucide-react'
+import SectionDivider from '@/components/SectionDivider'
+import TrustedCompaniesCarousel from '@/components/TrustedCompaniesCarousel'
 
 // Service data for the 4 main services
 const services = [
@@ -128,12 +130,12 @@ const testimonials = [
 
 // Partnership logos
 const partners = [
-  { name: 'Microsoft', logo: 'MS' },
-  { name: 'Google', logo: 'G' },
-  { name: 'AWS', logo: 'AWS' },
-  { name: 'Vercel', logo: 'V' },
-  { name: 'MongoDB', logo: 'MDB' },
-  { name: 'PostgreSQL', logo: 'PSQL' }
+  { name: 'Microsoft', logo: 'MS', logoUrl: 'https://en.wikipedia.org/wiki/Microsoft#/media/File:Microsoft_logo_(2012).svg' },
+  { name: 'Google', logo: 'G', logoUrl: 'https://en.wikipedia.org/wiki/Google#/media/File:Google_2015_logo.svg' },
+  { name: 'Amazon Web Services', logo: 'AWS', logoUrl: 'https://en.wikipedia.org/wiki/Amazon_Web_Services#/media/File:Amazon_Web_Services_Logo.svg' },
+  { name: 'Vercel', logo: 'V', logoUrl: 'https://en.wikipedia.org/wiki/Vercel#/media/File:Vercel_logo.svg' },
+  { name: 'MongoDB', logo: 'MDB', logoUrl: 'https://en.wikipedia.org/wiki/MongoDB#/media/File:MongoDB_Logo.svg' },
+  { name: 'PostgreSQL', logo: 'PSQL', logoUrl: 'https://en.wikipedia.org/wiki/PostgreSQL#/media/File:Postgresql_elephant.svg' }
 ]
 
 // Stats
@@ -284,6 +286,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <SectionDivider variant="accent" />
+
       {/* Testimonials Carousel Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black/30 backdrop-blur-sm">
         <div className="max-w-4xl mx-auto">
@@ -296,7 +300,7 @@ export default function HomePage() {
           <div className="relative">
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 text-center">
               <div className="flex justify-center mb-6">
-                <img 
+                <img
                   src={testimonials[currentTestimonial].avatar}
                   alt={testimonials[currentTestimonial].name}
                   className="w-20 h-20 rounded-full border-2 border-purple-500"
@@ -324,13 +328,13 @@ export default function HomePage() {
             </div>
             
             {/* Navigation buttons */}
-            <button 
+            <button
               onClick={prevTestimonial}
               className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 w-12 h-12 bg-purple-600 hover:bg-purple-700 text-white rounded-full flex items-center justify-center transition-colors"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
-            <button 
+            <button
               onClick={nextTestimonial}
               className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 w-12 h-12 bg-purple-600 hover:bg-purple-700 text-white rounded-full flex items-center justify-center transition-colors"
             >
@@ -344,8 +348,8 @@ export default function HomePage() {
                   key={index}
                   onClick={() => setCurrentTestimonial(index)}
                   className={`w-3 h-3 rounded-full transition-all ${
-                    index === currentTestimonial 
-                      ? 'bg-purple-500 scale-125' 
+                    index === currentTestimonial
+                      ? 'bg-purple-500 scale-125'
                       : 'bg-gray-600 hover:bg-gray-500'
                   }`}
                 />
@@ -355,29 +359,19 @@ export default function HomePage() {
         </div>
       </section>
 
+      <SectionDivider variant="subtle" />
+
       {/* Partners Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h3 className="text-2xl font-bold text-white mb-12">
             Trusted by Leading Companies
           </h3>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center">
-            {partners.map((partner) => (
-              <div 
-                key={partner.name}
-                className="group flex flex-col items-center"
-              >
-                <div className="w-16 h-16 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                  <span className="text-white font-bold text-lg">{partner.logo}</span>
-                </div>
-                <span className="text-gray-400 text-sm group-hover:text-white transition-colors">
-                  {partner.name}
-                </span>
-              </div>
-            ))}
-          </div>
+          <TrustedCompaniesCarousel companies={partners} />
         </div>
       </section>
+
+      <SectionDivider variant="default" />
 
       {/* Newsletter Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-900/20 to-pink-900/20">
@@ -388,7 +382,7 @@ export default function HomePage() {
               Stay Updated
             </h2>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              Get the latest insights on web development, AI trends, and digital innovation 
+              Get the latest insights on web development, AI trends, and digital innovation
               delivered straight to your inbox.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">

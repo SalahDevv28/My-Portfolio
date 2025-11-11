@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ArrowRight, Code, Server, Bot, Search, CheckCircle, Users, Clock, Shield } from 'lucide-react'
+import SectionDivider from '@/components/SectionDivider'
 
 const services = [
   {
@@ -165,6 +166,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <SectionDivider variant="accent" />
+
       {/* Services Detail Sections */}
       {services.map((service, index) => {
         const Icon = service.icon
@@ -205,7 +208,7 @@ export default function ServicesPage() {
                     <h4 className="text-lg font-heading font-semibold text-white mb-4">Technologies We Use</h4>
                     <div className="flex flex-wrap gap-2">
                       {service.technologies.map((tech, techIndex) => (
-                        <span 
+                        <span
                           key={techIndex}
                           className="px-3 py-1 bg-purple-600/20 text-purple-300 text-sm rounded-full border border-purple-600/30"
                         >
