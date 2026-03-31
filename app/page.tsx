@@ -110,10 +110,10 @@ const testimonials = [
 
 // Stats
 const stats = [
-  { label: 'Projects Built', value: '10+', icon: Award },
-  { label: 'Clients Served', value: '3–5', icon: Users },
-  { label: 'Specialty', value: 'AI-powered systems & workflows', icon: Star },
-  { label: 'Response Time', value: '<24h', icon: Zap }
+  { label: 'Projects Built & Delivered', value: '10+', icon: Award },
+  { label: 'Clients Across Different Use Cases', value: '3+', icon: Users },
+  { label: 'AI-Powered Systems and workflows', value: '100%', icon: Star },
+  { label: 'Response Fast & Reliable', value: '<24h', icon: Zap }
 ]
 
 export default function HomePage() {
