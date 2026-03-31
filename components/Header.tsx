@@ -60,8 +60,8 @@ export default function Header() {
             </span>
           </Link>
 
-          {/* Desktop Navigation - Right aligned */}
-          <nav className="hidden md:flex items-center space-x-8">
+          {/* Desktop Navigation - Right aligned with CTA */}
+          <div className="hidden md:flex items-center space-x-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -76,10 +76,6 @@ export default function Header() {
                 )}
               </Link>
             ))}
-          </nav>
-
-          {/* CTA Button - Right aligned */}
-          <div className="hidden md:flex">
             <Link
               href="/contact"
               className="px-6 py-2.5 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:scale-105 shadow-lg"
