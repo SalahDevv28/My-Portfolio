@@ -197,7 +197,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-              What I <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Do</span>
+              What We <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Do</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               We specialize in three core areas, helping businesses build modern digital presence and automate their operations.
@@ -325,7 +325,7 @@ export default function HomePage() {
               Ready to Start Your Project?
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Let's discuss your project and see how I can help bring your vision to life.
+              Let's discuss your project and see how we can help bring your vision to life.
             </p>
             <Link
               href="/contact"
