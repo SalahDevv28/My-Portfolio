@@ -8,4 +8,4 @@
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */let a=(0,t(9224).Z)("CheckCircle",[["path",{d:"M22 11.08V12a10 10 0 1 1-5.93-9.14",key:"g774vq"}],["path",{d:"m9 11 3 3L22 4",key:"1pflzl"}]])},1718:(e,s,t)=>{"use strict";t.r(s),t.d(s,{$$typeof:()=>l,__esModule:()=>r,default:()=>n});let a=(0,t(6843).createProxy)(String.raw`c:\Users\AMT\Desktop\SNT PORTFOLIO\app\contact\page.tsx`),{__esModule:r,$$typeof:l}=a,n=a.default}};var s=require("../../webpack-runtime.js");s.C(e);var t=e=>s(s.s=e),a=s.X(0,[722,625],()=>t(2172));module.exports=a})();
+ */let a=(0,t(9224).Z)("CheckCircle",[["path",{d:"M22 11.08V12a10 10 0 1 1-5.93-9.14",key:"g774vq"}],["path",{d:"m9 11 3 3L22 4",key:"1pflzl"}]])},1718:(e,s,t)=>{"use strict";t.r(s),t.d(s,{$$typeof:()=>l,__esModule:()=>r,default:()=>n});let a=(0,t(6843).createProxy)(String.raw`c:\Users\AMT\Desktop\SNT PORTFOLIO\app\contact\page.tsx`),{__esModule:r,$$typeof:l}=a,n=a.default}};var s=require("../../webpack-runtime.js");s.C(e);var t=e=>s(s.s=e),a=s.X(0,[722,65],()=>t(2172));module.exports=a})();

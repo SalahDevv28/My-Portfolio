@@ -1,4 +1,4 @@
-# Sybil Solutions - Deployment Guide
+# SNT Solutions - Deployment Guide
 
 ## 🚀 Vercel Deployment
 
@@ -15,7 +15,7 @@
 2. **Import Your Project**
    - Click "New Project"
    - Connect your GitHub repository
-   - Select your `sybil-solutions` repository
+   - Select your `My-Portfolio` repository
 
 ### Step 2: Configure Build Settings
 
@@ -221,4 +221,4 @@ For deployment support:
 
 ---
 
-Your Sybil Solutions website is now ready for production deployment! 🎉
+Your SNT Solutions website is now ready for production deployment! 🎉

@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { NavItem } from '@/lib/types'
-import { useScrollDirection } from '@/lib/hooks/useScrollDirection'
 
 const navigation: NavItem[] = [
   { name: 'Home', href: '/' },
@@ -14,15 +13,14 @@ const navigation: NavItem[] = [
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const { isScrollingUp, isScrollingDown, scrollY } = useScrollDirection()
   const pathname = usePathname()
 
-  const isPortalPage = pathname === '/'
-  const shouldHideHeader = isPortalPage ? false : isScrollingDown && scrollY > 50
-  const shouldShowHeader = isPortalPage ? true : isScrollingUp || scrollY < 50
-
   useEffect(() => {
-    setIsScrolled(window.scrollY > 50)
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   // Prevent body scroll when mobile menu is open
@@ -41,8 +39,6 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        shouldShowHeader ? 'translate-y-0' : '-translate-y-full'
-      } ${
         isScrolled
           ? 'bg-background/90 backdrop-blur-md border-b border-gray-800/50'
           : 'bg-background/60 backdrop-blur-sm'
@@ -51,12 +47,9 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
-            <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
-              <span className="text-white font-bold text-sm">S</span>
-            </div>
+          <Link href="/" className="flex items-center group">
             <span className="font-heading font-bold text-xl text-white group-hover:text-purple-300 transition-colors">
-              SNT
+              SNT Solutions
             </span>
           </Link>
 
@@ -103,14 +96,11 @@ export default function Header() {
             <div className="flex items-center justify-between p-4 border-b border-gray-800">
               <Link
                 href="/"
-                className="flex items-center space-x-2"
+                className="flex items-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">S</span>
-                </div>
                 <span className="font-heading font-bold text-xl text-white">
-                  SNT
+                  SNT Solutions
                 </span>
               </Link>
               <button

@@ -19,10 +19,10 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: 'SNT - Building Websites, AI Systems & Automations',
-    template: '%s | SNT'
+    default: 'SNT Solutions - Building Websites, AI Systems & Automations',
+    template: '%s | SNT Solutions'
   },
-  description: 'SNT builds modern websites with Next.js/React, customized Notion systems with AI automations, and intelligent AI agents/automations.',
+  description: 'SNT Solutions builds modern websites with Next.js/React, customized Notion systems with AI automations, and intelligent AI agents/automations.',
   keywords: [
     'web development',
     'Next.js development',
@@ -34,23 +34,23 @@ export const metadata: Metadata = {
     'AI workflows',
     'portfolio'
   ],
-  authors: [{ name: 'SNT' }],
-  creator: 'SNT',
-  publisher: 'SNT',
+  authors: [{ name: 'SNT Solutions' }],
+  creator: 'SNT Solutions',
+  publisher: 'SNT Solutions',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://sybil-solutions.com'),
+  metadataBase: new URL('https://snt-solutions.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Sybil Solutions - Digital Innovation & AI Development',
-    description: 'Specializing in frontend, backend, AI agent development, and research consulting. Building the future of digital experiences.',
-    url: 'https://sybil-solutions.com',
-    siteName: 'Sybil Solutions',
+    title: 'SNT Solutions - Building Websites, AI Systems & Automations',
+    description: 'We build modern websites, customized Notion systems with AI, and intelligent automations that help businesses grow.',
+    url: 'https://snt-solutions.com',
+    siteName: 'SNT Solutions',
     locale: 'en_US',
     type: 'website',
     images: [
@@ -58,16 +58,16 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Sybil Solutions - Digital Innovation & AI Development',
+        alt: 'SNT Solutions - Building Websites, AI Systems & Automations',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sybil Solutions - Digital Innovation & AI Development',
-    description: 'Specializing in frontend, backend, AI agent development, and research consulting.',
+    title: 'SNT Solutions - Building Websites, AI Systems & Automations',
+    description: 'We build modern websites, customized Notion systems with AI, and intelligent automations.',
     images: ['/og-image.jpg'],
-    creator: '@sybilsolutions',
+    creator: '@sntsolutions',
   },
   robots: {
     index: true,

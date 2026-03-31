@@ -1,6 +1,6 @@
-# Sybil Solutions - Next.js Portfolio Website
+# SNT Solutions - Next.js Portfolio Website
 
-A modern, dynamic portfolio website for Sybil Solutions built with Next.js 14, TypeScript, and Tailwind CSS v3. Features a stunning portal entry animation, blog system, case studies, and contact forms.
+A modern, personal portfolio website for SNT Solutions built with Next.js 14, TypeScript, and Tailwind CSS v3. Features a clean design, services showcase, and contact form.
 
 ## 🚀 Features
 
@@ -12,21 +12,14 @@ A modern, dynamic portfolio website for Sybil Solutions built with Next.js 14, T
 - **Performance Optimized** - 60fps animations, image optimization, lazy loading
 
 ### Content Management
-- **Blog System** - Markdown-based blog with frontmatter support
-  - Dynamic routing for individual posts
-  - Category filtering and search functionality
-  - Featured images and author information
-  - SEO optimization with proper meta tags
-- **Case Studies** - Project showcases with detailed case studies
-  - Client information and project details
-  - Technology stacks and results
-  - Image galleries
+- **Services Section** - Showcase of services offered
+  - Building Websites (Next.js & React)
+  - Customized Notion Systems with AI
+  - AI Agents & Automations
+- **Testimonials** - Client feedback carousel
 
 ### Pages & Sections
-- **Homepage** - Hero section, service cards, testimonials, partnerships
-- **Services** - Frontend, Backend, AI Agent Development, Research & Consulting
-- **Blog** - Article listing with search and filtering
-- **Case Studies** - Project portfolio with detailed case studies
+- **Homepage** - Hero section, services, testimonials, contact CTA
 - **Contact** - Contact form with validation and company information
 
 ### Technical Features
@@ -50,37 +43,22 @@ A modern, dynamic portfolio website for Sybil Solutions built with Next.js 14, T
 ## 📁 Project Structure
 
 ```
-sybil-solutions/
+snt-solutions/
 ├── app/                          # Next.js App Router
 │   ├── layout.tsx               # Root layout with header/footer
-│   ├── page.tsx                 # Portal entry page
-│   ├── home/                    # Homepage
-│   ├── services/                # Services page
-│   ├── blog/                    # Blog system
-│   │   ├── page.tsx            # Blog listing
-│   │   └── [slug]/page.tsx     # Individual blog posts
-│   ├── case-studies/            # Case studies
-│   │   └── page.tsx            # Case studies listing
-│   └── contact/                 # Contact page
+│   ├── page.tsx                 # Homepage (single scrollable page)
+│   ├── contact/                 # Contact page
+│   └── globals.css              # Global styles and Tailwind
 ├── components/                   # Reusable components
 │   ├── Header.tsx               # Navigation header
 │   ├── Footer.tsx               # Site footer
-│   ├── PortalEntry.tsx          # Animated portal entrance
-│   ├── ServiceCard.tsx          # Service showcase cards
-│   ├── TestimonialCarousel.tsx  # Client testimonials
-│   ├── BlogCard.tsx             # Blog post cards
-│   ├── BlogSearch.tsx           # Blog search component
-│   ├── BlogFilter.tsx           # Blog category filter
-│   ├── CaseStudyCard.tsx        # Case study cards
-│   └── NewsletterSignup.tsx     # Newsletter form
-├── content/                     # Markdown content
-│   ├── blog/                    # Blog posts (markdown)
-│   └── case-studies/            # Case studies (markdown)
+│   ├── SectionDivider.tsx       # Visual section dividers
+│   └── TrustedCompaniesCarousel.tsx  # Partners carousel (unused)
 ├── lib/                         # Utility functions
 │   ├── types.ts                 # TypeScript type definitions
-│   └── markdown-utils.ts        # Markdown processing
+│   └── hooks/                   # Custom React hooks
+│       └── useScrollDirection.ts # Scroll behavior hook
 ├── public/                      # Static assets
-├── app/globals.css              # Global styles and Tailwind
 ├── tailwind.config.ts           # Tailwind configuration
 ├── next.config.js               # Next.js configuration
 ├── tsconfig.json                # TypeScript configuration
@@ -97,7 +75,7 @@ sybil-solutions/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/SalahDevv28/My-Portfolio.git
    cd sybil-solutions
    ```
 
@@ -286,4 +264,4 @@ For questions or support, contact:
 
 ---
 
-Built with ❤️ by Sybil Solutions Team
+Built with ❤️ by SNT Solutions Team

@@ -30,12 +30,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 lg:col-span-1">
-            <Link href="/" className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">S</span>
-              </div>
+            <Link href="/" className="flex items-center mb-4">
               <span className="font-heading font-bold text-xl text-white">
-                SNT
+                SNT Solutions
               </span>
             </Link>
             <p className="text-gray-400 text-sm mb-6 max-w-xs">
