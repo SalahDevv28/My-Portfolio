@@ -156,7 +156,7 @@ export default function HomePage() {
               Digital Solutions
             </h1>
             <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-              I build modern websites, customized Notion systems with AI, and intelligent automations 
+              We build modern websites, customized Notion systems with AI, and intelligent automations
               that help businesses grow and operate more efficiently.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -200,7 +200,7 @@ export default function HomePage() {
               What I <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Do</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              I specialize in three core areas, helping businesses build modern digital presence and automate their operations.
+              We specialize in three core areas, helping businesses build modern digital presence and automate their operations.
             </p>
           </div>
           
