@@ -110,9 +110,9 @@ const testimonials = [
 
 // Stats
 const stats = [
-  { label: 'Projects Completed', value: '100+', icon: Award },
-  { label: 'Happy Clients', value: '80+', icon: Users },
-  { label: 'Years Experience', value: '5+', icon: Star },
+  { label: 'Projects Built', value: '10+', icon: Award },
+  { label: 'Clients Served', value: '3–5', icon: Users },
+  { label: 'Specialty', value: 'AI-powered systems & workflows', icon: Star },
   { label: 'Response Time', value: '<24h', icon: Zap }
 ]
 
@@ -173,18 +173,18 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-black/30 backdrop-blur-sm">
+      <section className="py-10 bg-black/30 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-6 lg:px-24">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {stats.map((stat, index) => {
               const Icon = stat.icon
               return (
                 <div key={stat.label} className="text-center group">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-full mb-4 group-hover:scale-110 transition-transform">
-                    <Icon className="w-8 h-8 text-purple-400" />
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-full mb-3 group-hover:scale-110 transition-transform">
+                    <Icon className="w-6 h-6 text-purple-400" />
                   </div>
-                  <div className="text-3xl lg:text-4xl font-bold text-white mb-2">{stat.value}</div>
-                  <div className="text-gray-400">{stat.label}</div>
+                  <div className="text-2xl lg:text-3xl font-bold text-white mb-1">{stat.value}</div>
+                  <div className="text-sm text-gray-400">{stat.label}</div>
                 </div>
               )
             })}
