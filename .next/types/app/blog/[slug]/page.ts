@@ -1,4 +1,4 @@
-// File: C:\Users\AMT\Desktop\Sybil Solutions - Finale\app\blog\[slug]\page.tsx
+// File: c:\Users\AMT\Desktop\SNT PORTFOLIO\app\blog\[slug]\page.tsx
 import * as entry from '../../../../../app/blog/[slug]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

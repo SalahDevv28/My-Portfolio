@@ -19,25 +19,24 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Sybil Solutions - Digital Innovation & AI Development',
-    template: '%s | Sybil Solutions'
+    default: 'SNT - Building Websites, AI Systems & Automations',
+    template: '%s | SNT'
   },
-  description: 'Sybil Solutions specializes in frontend development, backend solutions, AI agent development, and research & consulting. We build cutting-edge digital experiences and intelligent systems.',
+  description: 'SNT builds modern websites with Next.js/React, customized Notion systems with AI automations, and intelligent AI agents/automations.',
   keywords: [
-    'frontend development',
-    'backend development', 
-    'AI agent development',
-    'research consulting',
-    'digital solutions',
     'web development',
-    'software development',
-    'artificial intelligence',
-    'machine learning',
-    'full-stack development'
+    'Next.js development',
+    'React development',
+    'Notion systems',
+    'AI automations',
+    'AI agents',
+    'custom Notion',
+    'AI workflows',
+    'portfolio'
   ],
-  authors: [{ name: 'Sybil Solutions Team' }],
-  creator: 'Sybil Solutions',
-  publisher: 'Sybil Solutions',
+  authors: [{ name: 'SNT' }],
+  creator: 'SNT',
+  publisher: 'SNT',
   formatDetection: {
     email: false,
     address: false,

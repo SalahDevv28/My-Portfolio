@@ -8,11 +8,7 @@ import { NavItem } from '@/lib/types'
 import { useScrollDirection } from '@/lib/hooks/useScrollDirection'
 
 const navigation: NavItem[] = [
-  { name: 'Home', href: '/home' },
-  { name: 'Services', href: '/services' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'Case Studies', href: '/case-studies' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Home', href: '/' },
 ]
 
 export default function Header() {
@@ -56,11 +52,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-accent-600 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
+            <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
               <span className="text-white font-bold text-sm">S</span>
             </div>
             <span className="font-heading font-bold text-xl text-white group-hover:text-purple-300 transition-colors">
-              Sybil Solutions
+              SNT
             </span>
           </Link>
 
@@ -86,9 +82,9 @@ export default function Header() {
           <div className="hidden md:flex">
             <Link
               href="/contact"
-              className="btn-primary text-sm hover:scale-105 transition-transform"
+              className="px-6 py-2.5 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:scale-105 shadow-lg"
             >
-              Get Started
+              Book a discovery call
             </Link>
           </div>
 
@@ -114,11 +110,11 @@ export default function Header() {
                 className="flex items-center space-x-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-accent-600 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-sm">S</span>
                 </div>
                 <span className="font-heading font-bold text-xl text-white">
-                  Sybil Solutions
+                  SNT
                 </span>
               </Link>
               <button
@@ -150,10 +146,10 @@ export default function Header() {
             <div className="p-8 border-t border-gray-800">
               <Link
                 href="/contact"
-                className="block w-full text-center bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-4 px-6 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 text-lg"
+                className="block w-full text-center bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold py-4 px-6 rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 text-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Get Started
+                Book a discovery call
               </Link>
             </div>
           </div>

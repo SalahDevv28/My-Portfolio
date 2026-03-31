@@ -3,22 +3,16 @@ import { Github, Twitter, Linkedin, Mail } from 'lucide-react'
 
 const footerLinks = {
   services: [
-    { name: 'Frontend Development', href: '/services#frontend' },
-    { name: 'Backend Development', href: '/services#backend' },
-    { name: 'AI Agent Development', href: '/services#ai-agents' },
-    { name: 'Research & Consulting', href: '/services#research' },
+    { name: 'Building Websites', href: '/#services' },
+    { name: 'Customized Notion Systems', href: '/#services' },
+    { name: 'AI Agents & Automations', href: '/#services' },
   ],
   company: [
-    { name: 'About Us', href: '/about' },
-    { name: 'Our Team', href: '/team' },
-    { name: 'Careers', href: '/careers' },
     { name: 'Contact', href: '/contact' },
   ],
   resources: [
-    { name: 'Blog', href: '/blog' },
-    { name: 'Case Studies', href: '/case-studies' },
-    { name: 'Documentation', href: '/docs' },
-    { name: 'Support', href: '/support' },
+    { name: 'Privacy Policy', href: '/privacy' },
+    { name: 'Terms of Service', href: '/terms' },
   ],
 }
 
@@ -37,16 +31,16 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1 lg:col-span-1">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-accent-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">S</span>
               </div>
               <span className="font-heading font-bold text-xl text-white">
-                Sybil Solutions
+                SNT
               </span>
             </Link>
             <p className="text-gray-400 text-sm mb-6 max-w-xs">
-              Building the future of digital experiences through innovative frontend, 
-              backend, and AI solutions.
+              Building intelligent digital solutions with modern websites,
+              customized Notion systems, and AI automations.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((item) => {
@@ -120,7 +114,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Sybil Solutions. All rights reserved.
+              © 2024 SNT. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link
