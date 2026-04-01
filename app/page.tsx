@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import {
   ArrowRight,
-  Code,
   Bot,
   Layers,
   Star,
@@ -15,58 +14,12 @@ import {
   ChevronRight,
   Mail,
   CheckCircle,
-  MessageCircle
+  MessageCircle,
+  Search,
+  PenTool,
+  ZapIcon
 } from 'lucide-react'
 import SectionDivider from '@/components/SectionDivider'
-
-// Service data for the 3 main services
-const services = [
-  {
-    id: 'websites',
-    title: 'Building Websites',
-    description: 'Modern, high-performance websites built with Next.js and React. We create stunning, responsive designs that convert visitors into customers.',
-    icon: Code,
-    features: [
-      'Next.js & React Development',
-      'Responsive & Mobile-First Design',
-      'Performance Optimization',
-      'SEO Best Practices',
-      'Accessibility (WCAG 2.1 AA)',
-      'Ongoing Maintenance & Support'
-    ],
-    color: 'from-blue-500 to-cyan-500'
-  },
-  {
-    id: 'notion-systems',
-    title: 'Customized Notion Systems',
-    description: 'Fully customized Notion workspaces powered with AI automations. We transform your Notion into a powerful, intelligent business operations hub.',
-    icon: Layers,
-    features: [
-      'Custom Notion Workspace Design',
-      'AI-Powered Automations',
-      'Database & Template Creation',
-      'Workflow Optimization',
-      'Integration with External Tools',
-      'Team Training & Documentation'
-    ],
-    color: 'from-purple-500 to-pink-500'
-  },
-  {
-    id: 'ai-automations',
-    title: 'AI Agents & Automations',
-    description: 'Intelligent AI agents and automation solutions that streamline your business processes. We build custom AI systems that work 24/7.',
-    icon: Bot,
-    features: [
-      'Custom AI Agent Development',
-      'Workflow Automation',
-      'Natural Language Processing',
-      'Data Processing & Analysis',
-      'API Integrations',
-      'Monitoring & Optimization'
-    ],
-    color: 'from-green-500 to-emerald-500'
-  }
-]
 
 // Testimonials data
 const testimonials = [
@@ -197,7 +150,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Philosophy</span>
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Design Philosophy</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
               We believe in the power of AI-enhanced Notion systems to transform how businesses operate.
@@ -206,60 +159,60 @@ export default function HomePage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Philosophy Card 1 */}
-            <div className="group p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-purple-500/50 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <span className="text-2xl font-bold text-white">01</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors">
-                Understand First
-              </h3>
-              <p className="text-gray-400 leading-relaxed mb-4">
-                Every great system starts with deep understanding. We take the time to learn your workflows,
-                challenges, and goals before designing a solution.
-              </p>
-              <p className="text-gray-300 text-sm">
-                We analyze your current Notion setup, identify pain points, and map out opportunities
-                for AI-driven improvements.
-              </p>
+          {/* Philosophy Card 1 */}
+          <div className="group p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-purple-500/50 transition-all duration-300">
+            <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <Search className="w-8 h-8 text-white" />
             </div>
-
-            {/* Philosophy Card 2 */}
-            <div className="group p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-purple-500/50 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <span className="text-2xl font-bold text-white">02</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors">
-                Design with Purpose
-              </h3>
-              <p className="text-gray-400 leading-relaxed mb-4">
-                Clean, intuitive design isn't just about aesthetics—it's about creating systems
-                that people actually want to use.
-              </p>
-              <p className="text-gray-300 text-sm">
-                We craft Notion workspaces that are both beautiful and functional, with careful
-                attention to user experience and information architecture.
-              </p>
-            </div>
-
-            {/* Philosophy Card 3 */}
-            <div className="group p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-purple-500/50 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <span className="text-2xl font-bold text-white">03</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors">
-                Automate Intelligently
-              </h3>
-              <p className="text-gray-400 leading-relaxed mb-4">
-                AI should enhance human work, not replace it. We build smart automations that
-                handle repetitive tasks while preserving human creativity.
-              </p>
-              <p className="text-gray-300 text-sm">
-                From automated workflows to AI-powered insights, we create systems that learn,
-                adapt, and make your team more productive every day.
-              </p>
-            </div>
+            <h3 className="text-xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors">
+              Understand First
+            </h3>
+            <p className="text-gray-400 leading-relaxed mb-4">
+              Every great system starts with deep understanding. We take the time to learn your workflows,
+              challenges, and goals before designing a solution.
+            </p>
+            <p className="text-gray-300 text-sm">
+              We analyze your current Notion setup, identify pain points, and map out opportunities
+              for AI-driven improvements.
+            </p>
           </div>
+
+          {/* Philosophy Card 2 */}
+          <div className="group p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-purple-500/50 transition-all duration-300">
+            <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <PenTool className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors">
+              Design with Purpose
+            </h3>
+            <p className="text-gray-400 leading-relaxed mb-4">
+              Clean, intuitive design isn't just about aesthetics—it's about creating systems
+              that people actually want to use.
+            </p>
+            <p className="text-gray-300 text-sm">
+              We craft Notion workspaces that are both beautiful and functional, with careful
+              attention to user experience and information architecture.
+            </p>
+          </div>
+
+          {/* Philosophy Card 3 */}
+          <div className="group p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-purple-500/50 transition-all duration-300">
+            <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <ZapIcon className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors">
+              Automate Intelligently
+            </h3>
+            <p className="text-gray-400 leading-relaxed mb-4">
+              AI should enhance human work, not replace it. We build smart automations that
+              handle repetitive tasks while preserving human creativity.
+            </p>
+            <p className="text-gray-300 text-sm">
+              From automated workflows to AI-powered insights, we create systems that learn,
+              adapt, and make your team more productive every day.
+            </p>
+          </div>
+        </div>
 
           {/* Core Service Highlight */}
           <div className="mt-16 p-8 md:p-12 bg-gradient-to-r from-purple-900/20 to-pink-900/20 rounded-2xl border border-purple-500/20">
