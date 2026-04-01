@@ -280,6 +280,7 @@ export default function HomePage() {
             </p>
           </div>
         </div>
+      </div>
       </section>
 
       <SectionDivider variant="accent" />
