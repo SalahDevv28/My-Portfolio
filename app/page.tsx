@@ -84,7 +84,7 @@ const services = [
     icon: Workflow,
     title: 'Notion Systems',
     description: 'We transform Notion into a powerful business operations hub. Custom databases, automated workflows, and seamless integrations that keep your team organized and productive.',
-    features: ['Custom Databases', 'Workflow Automation', 'Team Training', 'Ongoing Support']
+    features: ['Custom Databases', 'Workflow Automation', 'Team Training', 'Ongoing Support', 'We train your team to use the system so they extract the best out of it']
   },
   {
     icon: Bot,
@@ -278,28 +278,6 @@ export default function HomePage() {
               From automated workflows to AI-powered insights, we create systems that learn,
               adapt, and make your team more productive every day.
             </p>
-          </div>
-        </div>
-
-          {/* Core Service Highlight */}
-          <div className="mt-16 p-8 md:p-12 bg-gradient-to-r from-purple-900/20 to-pink-900/20 rounded-2xl border border-purple-500/20">
-            <div className="max-w-3xl mx-auto text-center">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                AI-Powered Notion Systems & Workflows
-              </h3>
-              <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-                Our specialty is transforming Notion into an intelligent business operations hub.
-                We create custom databases, automated workflows, and AI integrations that streamline
-                your entire organization.
-              </p>
-              <div className="flex flex-wrap justify-center gap-3">
-                {['Notion API Integrations', 'AI Automations', 'Custom Databases', 'Workflow Design', 'Team Training'].map((item) => (
-                  <span key={item} className="px-4 py-2 bg-purple-600/20 text-purple-300 text-sm rounded-full border border-purple-600/30">
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </section>
