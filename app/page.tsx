@@ -84,7 +84,7 @@ const services = [
     icon: Workflow,
     title: 'Notion Systems',
     description: 'We transform Notion into a powerful business operations hub. Custom databases, automated workflows, and seamless integrations that keep your team organized and productive.',
-    features: ['Custom Databases', 'Workflow Automation', 'Team Training', 'Ongoing Support', 'We train your team to use the system so they extract the best out of it']
+    features: ['Custom Databases', 'Workflow Automation', 'Team Training', 'Ongoing Support']
   },
   {
     icon: Bot,
