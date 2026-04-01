@@ -17,7 +17,10 @@ import {
   MessageCircle,
   Search,
   PenTool,
-  ZapIcon
+  ZapIcon,
+  Globe,
+  Code,
+  Workflow
 } from 'lucide-react'
 import SectionDivider from '@/components/SectionDivider'
 
@@ -63,10 +66,32 @@ const testimonials = [
 
 // Stats
 const stats = [
-  { label: 'Projects Built & Delivered', value: '10+', icon: Award },
-  { label: 'Clients Across Different Use Cases', value: '3+', icon: Users },
-  { label: 'AI-Powered Systems and workflows', value: '100%', icon: Star },
-  { label: 'Response Fast & Reliable', value: '<24h', icon: Zap }
+  { label: 'Projects Delivered', value: '10+', icon: Award },
+  { label: 'Happy Clients', value: '3+', icon: Users },
+  { label: 'AI-Powered Solutions', value: '100%', icon: Star },
+  { label: 'Response Time', value: '<24h', icon: Zap }
+]
+
+// Services data
+const services = [
+  {
+    icon: Globe,
+    title: 'Modern Websites',
+    description: 'We build fast, responsive, and visually stunning websites using Next.js, React, and modern web technologies. Every site is crafted to convert visitors into customers.',
+    features: ['Next.js & React', 'Responsive Design', 'SEO Optimized', 'Performance First']
+  },
+  {
+    icon: Workflow,
+    title: 'Notion Systems',
+    description: 'We transform Notion into a powerful business operations hub. Custom databases, automated workflows, and seamless integrations that keep your team organized and productive.',
+    features: ['Custom Databases', 'Workflow Automation', 'Team Training', 'Ongoing Support']
+  },
+  {
+    icon: Bot,
+    title: 'AI Automations',
+    description: 'Intelligent AI agents and automations that handle repetitive tasks, analyze data, and supercharge your workflows. We build systems that work while you sleep.',
+    features: ['AI Agents', 'Smart Workflows', 'Data Processing', 'Custom Integrations']
+  }
 ]
 
 export default function HomePage() {
@@ -104,17 +129,17 @@ export default function HomePage() {
         <div className="relative z-10 max-w-7xl mx-auto text-center">
           <div className="animate-fade-in">
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Intelligent</span>
+              We Build <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Intelligent</span>
               <br />
               Digital Solutions
             </h1>
             <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-              We build modern websites, customized Notion systems with AI, and intelligent automations
-              that help businesses grow and operate more efficiently.
+              From modern websites to AI-powered Notion systems and automations—we help businesses
+              transform their digital presence and operate at peak efficiency.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 className="group px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Book a discovery call
@@ -138,6 +163,48 @@ export default function HomePage() {
                   </div>
                   <div className="text-2xl lg:text-3xl font-bold text-white mb-1">{stat.value}</div>
                   <div className="text-sm text-gray-400">{stat.label}</div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* What We Do Section */}
+      <section className="py-20 px-6 lg:px-24 bg-black/30 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+              What <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">We Do</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              We specialize in three core areas that help businesses thrive in the digital age.
+              Each service is tailored to your unique needs and goals.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {services.map((service, index) => {
+              const Icon = service.icon
+              return (
+                <div key={index} className="group p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-purple-500/50 transition-all duration-300 hover:transform hover:scale-105">
+                  <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <Icon className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed mb-6">
+                    {service.description}
+                  </p>
+                  <ul className="space-y-2">
+                    {service.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-center text-sm text-gray-300">
+                        <CheckCircle className="w-4 h-4 text-purple-400 mr-2 flex-shrink-0" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               )
             })}
