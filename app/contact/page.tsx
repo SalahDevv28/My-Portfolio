@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react'
+import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, MessageCircle, Zap, Clock } from 'lucide-react'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -66,14 +66,15 @@ export default function ContactPage() {
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
       <section className="relative py-20 px-6 lg:px-24">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-background to-accent-900/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black to-blue-900/20"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(120,119,198,0.1),transparent_50%)]"></div>
         <div className="max-w-7xl mx-auto relative">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-6">
-              Get <span className="gradient-text">In Touch</span>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+              Let's Build Something <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Intelligent</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Ready to transform your ideas into reality? Let's discuss your project and see how we can help.
+              Ready to transform your digital presence? Tell us about your project and we'll get back to you within 24 hours.
             </p>
           </div>
         </div>
@@ -85,14 +86,14 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div className="card">
-              <h2 className="text-2xl font-heading font-bold text-white mb-6">
-                Start Your Project
+              <h2 className="text-2xl font-bold text-white mb-6">
+                Start Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-400">Project</span>
               </h2>
               
               {isSuccess ? (
                 <div className="text-center py-8">
                   <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-                  <h3 className="text-xl font-heading font-bold text-white mb-2">
+                  <h3 className="text-xl font-bold text-white mb-2">
                     Thank you for your message!
                   </h3>
                   <p className="text-gray-400">
@@ -103,7 +104,7 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {error && (
                     <div className="flex items-center space-x-2 p-3 bg-red-500/10 border border-red-500/20 rounded-lg">
-                      <AlertCircle className="w-5 h-5 text-red-400" />
+                      <AlertCircle className="w-5 h-5 text-red-400 flex-shrink-0" />
                       <span className="text-red-400 text-sm">{error}</span>
                     </div>
                   )}
@@ -120,7 +121,7 @@ export default function ContactPage() {
                         value={formData.name}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600 transition-colors"
+                        className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-colors"
                         placeholder="John Doe"
                       />
                     </div>
@@ -135,7 +136,7 @@ export default function ContactPage() {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600 transition-colors"
+                        className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-colors"
                         placeholder="john@example.com"
                       />
                     </div>
@@ -151,7 +152,7 @@ export default function ContactPage() {
                       name="company"
                       value={formData.company}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600 transition-colors"
+                      className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-colors"
                       placeholder="Your Company"
                     />
                   </div>
@@ -159,41 +160,42 @@ export default function ContactPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="projectType" className="block text-sm font-medium text-gray-300 mb-2">
-                        Project Type
+                        What do you need?
                       </label>
                       <select
                         id="projectType"
                         name="projectType"
                         value={formData.projectType}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600 transition-colors"
+                        className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-colors appearance-none"
                       >
-                        <option value="">Select project type</option>
-                        <option value="frontend">Frontend Development</option>
-                        <option value="backend">Backend Development</option>
-                        <option value="fullstack">Full-Stack Development</option>
-                        <option value="ai">AI/ML Solution</option>
+                        <option value="">Select a service</option>
+                        <option value="website">Modern Website</option>
+                        <option value="notion">Notion System & Setup</option>
+                        <option value="ai-automation">AI Agents & Automations</option>
+                        <option value="website-notion">Website + Notion System</option>
+                        <option value="full-package">Full Digital Transformation</option>
                         <option value="consulting">Consulting</option>
                         <option value="other">Other</option>
                       </select>
                     </div>
                     <div>
                       <label htmlFor="budget" className="block text-sm font-medium text-gray-300 mb-2">
-                        Project Budget
+                        Estimated Budget
                       </label>
                       <select
                         id="budget"
                         name="budget"
                         value={formData.budget}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600 transition-colors"
+                        className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-colors appearance-none"
                       >
                         <option value="">Select budget range</option>
+                        <option value="1k-3k">$1,000 - $3,000</option>
+                        <option value="3k-5k">$3,000 - $5,000</option>
                         <option value="5k-10k">$5,000 - $10,000</option>
-                        <option value="10k-25k">$10,000 - $25,000</option>
-                        <option value="25k-50k">$25,000 - $50,000</option>
-                        <option value="50k-100k">$50,000 - $100,000</option>
-                        <option value="100k+">$100,000+</option>
+                        <option value="10k-20k">$10,000 - $20,000</option>
+                        <option value="20k+">$20,000+</option>
                       </select>
                     </div>
                   </div>
@@ -209,7 +211,7 @@ export default function ContactPage() {
                       onChange={handleInputChange}
                       required
                       rows={6}
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600 transition-colors"
+                      className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-colors"
                       placeholder="Tell us about your project, goals, and any specific requirements..."
                     />
                   </div>
@@ -217,13 +219,13 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full btn-primary text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none text-lg"
                   >
                     {isSubmitting ? (
                       'Sending...'
                     ) : (
                       <>
-                        <Send className="w-5 h-5 mr-2" />
+                        <Send className="w-5 h-5 mr-2 inline" />
                         Send Message
                       </>
                     )}
@@ -235,66 +237,77 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div className="space-y-8">
               <div className="card">
-                <h3 className="text-xl font-heading font-bold text-white mb-6">
-                  Get In Touch
+                <h3 className="text-xl font-bold text-white mb-6">
+                  Get In <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Touch</span>
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-purple-600/20 rounded-lg flex items-center justify-center">
-                      <Mail className="w-5 h-5 text-purple-400" />
+                    <div className="w-10 h-10 bg-gradient-to-br from-pink-500/20 to-rose-500/20 rounded-lg flex items-center justify-center">
+                      <Mail className="w-5 h-5 text-pink-400" />
                     </div>
                     <div>
                       <div className="text-white font-medium">Email</div>
-                      <div className="text-gray-400">hello@snt-solutions.com</div>
+                      <a href="mailto:hello@snt-solutions.com" className="text-gray-400 hover:text-pink-400 transition-colors">hello@snt-solutions.com</a>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-purple-600/20 rounded-lg flex items-center justify-center">
-                      <Phone className="w-5 h-5 text-purple-400" />
+                    <div className="w-10 h-10 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg flex items-center justify-center">
+                      <MessageCircle className="w-5 h-5 text-purple-400" />
                     </div>
                     <div>
-                      <div className="text-white font-medium">Phone</div>
-                      <div className="text-gray-400">+1 (555) 123-4567</div>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-purple-600/20 rounded-lg flex items-center justify-center">
-                      <MapPin className="w-5 h-5 text-purple-400" />
-                    </div>
-                    <div>
-                      <div className="text-white font-medium">Location</div>
-                      <div className="text-gray-400">San Francisco, CA</div>
+                      <div className="text-white font-medium">Quick Response</div>
+                      <div className="text-gray-400">We reply within 24 hours</div>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="card">
-                <h3 className="text-xl font-heading font-bold text-white mb-4">
-                  Why Choose Us?
+                <h3 className="text-xl font-bold text-white mb-6">
+                  Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-400">SNT</span>?
                 </h3>
-                <ul className="space-y-3">
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span className="text-gray-300">8+ years of experience</span>
+                <ul className="space-y-4">
+                  <li className="flex items-center space-x-3">
+                    <div className="w-8 h-8 bg-gradient-to-br from-pink-500/20 to-rose-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Zap className="w-4 h-4 text-pink-400" />
+                    </div>
+                    <span className="text-gray-300">AI-powered solutions that work while you sleep</span>
                   </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span className="text-gray-300">200+ successful projects</span>
+                  <li className="flex items-center space-x-3">
+                    <div className="w-8 h-8 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-4 h-4 text-purple-400" />
+                    </div>
+                    <span className="text-gray-300">Fast turnaround - under 24h response time</span>
                   </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span className="text-gray-300">24-hour response time</span>
+                  <li className="flex items-center space-x-3">
+                    <div className="w-8 h-8 bg-gradient-to-br from-pink-500/20 to-rose-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="w-4 h-4 text-pink-400" />
+                    </div>
+                    <span className="text-gray-300">Modern tech stack (Next.js, React, AI)</span>
                   </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span className="text-gray-300">Dedicated project management</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-green-400" />
+                  <li className="flex items-center space-x-3">
+                    <div className="w-8 h-8 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="w-4 h-4 text-purple-400" />
+                    </div>
                     <span className="text-gray-300">Ongoing support & maintenance</span>
                   </li>
                 </ul>
+              </div>
+
+              <div className="card bg-gradient-to-br from-pink-500/10 to-rose-500/10 border-pink-500/20">
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Book a Discovery Call
+                </h3>
+                <p className="text-gray-400 mb-4">
+                  Not sure what you need? Let's chat about your goals and find the perfect solution for your business.
+                </p>
+                <a
+                  href="mailto:hello@snt-solutions.com?subject=Discovery Call Request"
+                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  Get in Touch
+                </a>
               </div>
             </div>
           </div>
