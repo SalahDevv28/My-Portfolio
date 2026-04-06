@@ -17,7 +17,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
   const Icon = iconMap[service.icon as keyof typeof iconMap] || Code
 
   return (
-    <div className="card group hover:scale-105 transition-all duration-300">
+    <div className="card group hover:border-purple-500/50 transition-all duration-300 hover:scale-105">
       <div className="flex items-start space-x-4 mb-6">
         <div className="flex-shrink-0">
           <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-accent-600 rounded-lg flex items-center justify-center">

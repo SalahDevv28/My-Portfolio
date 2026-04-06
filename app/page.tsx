@@ -140,7 +140,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
                 href="/contact"
-                className="group px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                className="group px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Book a discovery call
                 <ArrowRight className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -227,7 +227,7 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Philosophy Card 1 */}
-          <div className="group p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-purple-500/50 transition-all duration-300">
+          <div className="group p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-purple-500/50 transition-all duration-300 hover:transform hover:scale-105">
             <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <Search className="w-8 h-8 text-white" />
             </div>
@@ -245,7 +245,7 @@ export default function HomePage() {
           </div>
 
           {/* Philosophy Card 2 */}
-          <div className="group p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-purple-500/50 transition-all duration-300">
+          <div className="group p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-purple-500/50 transition-all duration-300 hover:transform hover:scale-105">
             <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <PenTool className="w-8 h-8 text-white" />
             </div>
@@ -263,7 +263,7 @@ export default function HomePage() {
           </div>
 
           {/* Philosophy Card 3 */}
-          <div className="group p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-purple-500/50 transition-all duration-300">
+          <div className="group p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-purple-500/50 transition-all duration-300 hover:transform hover:scale-105">
             <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <ZapIcon className="w-8 h-8 text-white" />
             </div>
@@ -327,13 +327,13 @@ export default function HomePage() {
             {/* Navigation buttons */}
             <button
               onClick={prevTestimonial}
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 w-12 h-12 bg-purple-600 hover:bg-purple-700 text-white rounded-full flex items-center justify-center transition-colors"
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 w-12 h-12 bg-purple-600 hover:bg-purple-700 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
             <button
               onClick={nextTestimonial}
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 w-12 h-12 bg-purple-600 hover:bg-purple-700 text-white rounded-full flex items-center justify-center transition-colors"
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 w-12 h-12 bg-purple-600 hover:bg-purple-700 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
             >
               <ChevronRight className="w-6 h-6" />
             </button>
@@ -371,7 +371,7 @@ export default function HomePage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg"
             >
               Book a discovery call
               <ArrowRight className="ml-2 w-5 h-5" />
