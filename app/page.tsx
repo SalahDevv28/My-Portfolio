@@ -147,6 +147,12 @@ export default function HomePage() {
                 Book a discovery call
                 <ArrowRight className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
+              <Link
+                href="/contact"
+                className="px-8 py-4 bg-transparent border-2 border-purple-500 text-white font-semibold rounded-lg hover:bg-purple-500/20 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                Get in touch
+              </Link>
             </div>
           </div>
         </div>
@@ -371,15 +377,23 @@ export default function HomePage() {
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Let's discuss your project and see how we can help bring your vision to life.
             </p>
-            <a
-              href="https://calendly.com/salahdevv/request-a-call"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg"
-            >
-              Book a discovery call
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                href="https://calendly.com/salahdevv/request-a-call"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg"
+              >
+                Book a discovery call
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
+              <Link
+                href="/contact"
+                className="inline-flex items-center px-8 py-4 bg-transparent border-2 border-purple-500 text-white font-semibold rounded-lg hover:bg-purple-500/20 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg"
+              >
+                Get in touch
+              </Link>
+            </div>
             <p className="text-gray-400 text-sm mt-4">
               Free 30-minute consultation to discuss your needs
             </p>
