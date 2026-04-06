@@ -139,7 +139,9 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="mailto:salahdevv@gmail.com?subject=Discovery Call Request"
+                href="https://calendly.com/salahdevv/request-a-call"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Book a discovery call
@@ -370,7 +372,9 @@ export default function HomePage() {
               Let's discuss your project and see how we can help bring your vision to life.
             </p>
             <a
-              href="mailto:salahdevv@gmail.com?subject=Discovery Call Request"
+              href="https://calendly.com/salahdevv/request-a-call"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg"
             >
               Book a discovery call

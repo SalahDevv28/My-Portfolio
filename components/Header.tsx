@@ -69,12 +69,14 @@ export default function Header() {
                 )}
               </Link>
             ))}
-            <Link
-              href="mailto:salahdevv@gmail.com?subject=Discovery Call Request"
+            <a
+              href="https://calendly.com/salahdevv/request-a-call"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-2.5 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Book a discovery call
-            </Link>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -131,7 +133,9 @@ export default function Header() {
             {/* CTA Button */}
             <div className="p-8 border-t border-gray-800">
               <a
-                href="mailto:salahdevv@gmail.com?subject=Discovery Call Request"
+                href="https://calendly.com/salahdevv/request-a-call"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block w-full text-center bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold py-4 px-6 rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
