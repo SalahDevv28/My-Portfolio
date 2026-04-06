@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['localhost', 'sybil-solutions.com'],
+    domains: ['localhost', 'snt-solutions.com'],
     formats: ['image/webp', 'image/avif'],
   },
   compiler: {

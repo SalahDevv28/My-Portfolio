@@ -76,7 +76,7 @@ snt-solutions/
 1. **Clone the repository**
    ```bash
    git clone https://github.com/SalahDevv28/My-Portfolio.git
-   cd sybil-solutions
+   cd snt-solutions
    ```
 
 2. **Install dependencies**
@@ -253,14 +253,14 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 🆘 Support
 
 For questions or support, contact:
-- Email: hello@sybil-solutions.com
+- Email: hello@snt-solutions.com
 - Phone: +1 (555) 123-4567
 
 ## 🔗 Links
 
-- **Website**: [sybil-solutions.com](https://sybil-solutions.com)
-- **Blog**: [sybil-solutions.com/blog](https://sybil-solutions.com/blog)
-- **Case Studies**: [sybil-solutions.com/case-studies](https://sybil-solutions.com/case-studies)
+- **Website**: [snt-solutions.com](https://snt-solutions.com)
+- **Blog**: [snt-solutions.com/blog](https://snt-solutions.com/blog)
+- **Case Studies**: [snt-solutions.com/case-studies](https://snt-solutions.com/case-studies)
 
 ---
 
