@@ -247,7 +247,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-white font-medium">Email</div>
-                      <a href="mailto:hello@snt-solutions.com" className="text-gray-400 hover:text-pink-400 transition-colors">hello@snt-solutions.com</a>
+                      <a href="mailto:salahdevv@gmail.com" className="text-gray-400 hover:text-pink-400 transition-colors">salahdevv@gmail.com</a>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -302,7 +302,7 @@ export default function ContactPage() {
                   Not sure what you need? Let's chat about your goals and find the perfect solution for your business.
                 </p>
                 <a
-                  href="mailto:hello@snt-solutions.com?subject=Discovery Call Request"
+                  href="mailto:salahdevv@gmail.com?subject=Discovery Call Request"
                   className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   <MessageCircle className="w-5 h-5 mr-2" />

@@ -20,7 +20,7 @@ const socialLinks = [
   { name: 'GitHub', href: 'https://github.com', icon: Github },
   { name: 'Twitter', href: 'https://twitter.com', icon: Twitter },
   { name: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
-  { name: 'Email', href: 'mailto:hello@snt-solutions.com', icon: Mail },
+  { name: 'Email', href: 'mailto:salahdevv@gmail.com', icon: Mail },
 ]
 
 export default function Footer() {

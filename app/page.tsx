@@ -138,13 +138,13 @@ export default function HomePage() {
               transform their digital presence and operate at peak efficiency.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link
-                href="/contact"
+              <a
+                href="mailto:salahdevv@gmail.com?subject=Discovery Call Request"
                 className="group px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Book a discovery call
                 <ArrowRight className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -369,13 +369,13 @@ export default function HomePage() {
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Let's discuss your project and see how we can help bring your vision to life.
             </p>
-            <Link
-              href="/contact"
+            <a
+              href="mailto:salahdevv@gmail.com?subject=Discovery Call Request"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg"
             >
               Book a discovery call
               <ArrowRight className="ml-2 w-5 h-5" />
-            </Link>
+            </a>
             <p className="text-gray-400 text-sm mt-4">
               Free 30-minute consultation to discuss your needs
             </p>
