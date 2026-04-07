@@ -308,7 +308,7 @@ export default function ContactPage() {
                   className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   <MessageCircle className="w-5 h-5 mr-2" />
-                  Get in Touch
+                  Book a discovery call
                 </a>
               </div>
             </div>
