@@ -6,6 +6,15 @@ import html from 'remark-html';
 
 const caseStudiesDirectory = path.join(process.cwd(), 'content', 'case-studies');
 
+function parseDate(dateStr: string): Date {
+  if (!dateStr) return new Date(0);
+  const ddmmyyyy = dateStr.match(/^(\d{2})-(\d{2})-(\d{4})$/);
+  if (ddmmyyyy) return new Date(`${ddmmyyyy[3]}-${ddmmyyyy[2]}-${ddmmyyyy[1]}`);
+  return new Date(dateStr);
+}
+
+export { parseDate };
+
 export type CaseStudy = {
   slug: string;
   title: string;
@@ -42,9 +51,9 @@ export async function getAllCaseStudies(): Promise<CaseStudy[]> {
           };
         })
     );
-    // Sort case studies by date, newest first
+    // Sort case studies by date, newest first (handles both YYYY-MM-DD and DD-MM-YYYY)
     return allCaseStudies.sort(
-      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+      (a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime()
     );
   } catch (error) {
     console.error('Error reading case studies:', error);
