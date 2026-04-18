@@ -1,3 +1,23 @@
+---
+title: "Building a Centralized Task & Project System for a Real Estate Agency"
+date: "18-04-2026"
+client: "RaynorLandingSolutions"
+category: "Productivity & Operations"
+featuredImage: "/images/case-studies/real-estate-notion.jpg"
+description: "Designed and built a complete Notion-based system to organize tasks, track projects, and keep the entire team synchronized in real time."
+technicalStack:
+  - Notion
+outcomes:
+  - "Centralized all tasks and projects into a single workspace"
+  - "Enabled real-time visibility across the entire team"
+  - "Reduced reliance on scattered emails and spreadsheets"
+  - "Onboarded the full team with tutorial videos and live training"
+testimonial:
+  author: "Agency Director"
+  role: "Real Estate Agency"
+  content: "The system completely changed how our team works. Everything is in one place, it's easy to use, and we finally have full visibility on what's happening across the business."
+---
+
 # Case Study 1: Real Estate Agency
 
 ## The Challenge

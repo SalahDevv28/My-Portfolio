@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import { ArrowRight, Layers } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { getAllCaseStudies } from '@/lib/mdx-utils';
+import CaseStudiesGrid from '@/components/CaseStudiesGrid';
 
 export const metadata = {
   title: 'Case Studies',
@@ -34,106 +35,10 @@ export default async function CaseStudiesPage() {
         </div>
       </section>
 
-      {/* Cards grid */}
+      {/* Search, filters, and grid */}
       <section className="py-16 px-6 lg:px-24 bg-black/30 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto">
-
-          {caseStudies.length === 0 ? (
-            <div className="text-center py-24">
-              <Layers className="w-16 h-16 text-purple-500/40 mx-auto mb-4" />
-              <p className="text-gray-400 text-lg">No case studies yet — check back soon.</p>
-            </div>
-          ) : (
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {caseStudies.map((cs) => (
-                <Link
-                  key={cs.slug}
-                  href={`/case-studies/${cs.slug}`}
-                  className="group flex flex-col bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-purple-500/50 transition-all duration-300 hover:transform hover:scale-105"
-                >
-                  <div className="flex flex-col flex-1 p-8">
-
-                    {/* Category + date row */}
-                    <div className="flex items-center justify-between mb-4">
-                      {cs.category ? (
-                        <span className="text-xs font-semibold uppercase tracking-widest text-purple-400 border border-purple-500/30 bg-purple-500/10 rounded-full px-2.5 py-0.5">
-                          {cs.category}
-                        </span>
-                      ) : (
-                        <span />
-                      )}
-                      {cs.date && (
-                        <span className="text-xs text-gray-500">
-                          {new Date(cs.date).toLocaleDateString(undefined, {
-                            year: 'numeric',
-                            month: 'short',
-                          })}
-                        </span>
-                      )}
-                    </div>
-
-                    {/* Title */}
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-300 transition-colors leading-snug">
-                      {cs.title}
-                    </h3>
-
-                    {/* Description */}
-                    {cs.description && (
-                      <p className="text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
-                        {cs.description}
-                      </p>
-                    )}
-
-                    {/* Client */}
-                    {cs.client && (
-                      <p className="text-xs text-gray-500 mb-4">
-                        Client: <span className="text-gray-300">{cs.client}</span>
-                      </p>
-                    )}
-
-                    {/* Tech stack pills */}
-                    {cs.technicalStack && cs.technicalStack.length > 0 && (
-                      <div className="flex flex-wrap gap-1.5 mb-5">
-                        {cs.technicalStack.slice(0, 4).map((tech: string) => (
-                          <span
-                            key={tech}
-                            className="text-xs text-gray-400 bg-white/5 border border-white/10 rounded-md px-2 py-0.5"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                        {cs.technicalStack.length > 4 && (
-                          <span className="text-xs text-gray-500 px-1 py-0.5">
-                            +{cs.technicalStack.length - 4} more
-                          </span>
-                        )}
-                      </div>
-                    )}
-
-                    {/* Outcomes preview */}
-                    {cs.outcomes && cs.outcomes.length > 0 && (
-                      <div className="mb-5 space-y-1">
-                        {cs.outcomes.slice(0, 2).map((outcome: string) => (
-                          <div key={outcome} className="flex items-start gap-2 text-xs text-gray-400">
-                            <span className="text-purple-400 mt-0.5 shrink-0">✓</span>
-                            {outcome}
-                          </div>
-                        ))}
-                      </div>
-                    )}
-
-                    {/* CTA */}
-                    <div className="mt-auto pt-4 border-t border-white/5 flex items-center justify-between">
-                      <span className="text-sm font-semibold text-purple-400 group-hover:text-purple-300 transition-colors">
-                        Read case study
-                      </span>
-                      <ArrowRight className="w-4 h-4 text-purple-400 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          )}
+          <CaseStudiesGrid caseStudies={caseStudies} />
         </div>
       </section>
 

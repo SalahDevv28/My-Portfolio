@@ -21,6 +21,13 @@ testimonial:
   author: "Dr. Michael Johnson"
   role: "CEO, HealthPlus Medical Group"
   content: "The new patient portal has transformed how we interact with our patients. It's secure, easy to use, and has significantly improved our operational efficiency."
+tags:
+  - Healthcare
+  - React
+  - Next.js
+  - AWS
+  - HIPAA Compliance
+  - Patient Portal
 ---
 
 # Challenge
