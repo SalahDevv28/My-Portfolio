@@ -1,0 +1,80 @@
+import { promises as fs } from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import { remark } from 'remark';
+import html from 'remark-html';
+
+const caseStudiesDirectory = path.join(process.cwd(), 'content', 'case-studies');
+
+export type CaseStudy = {
+  slug: string;
+  title: string;
+  date: string;
+  content: string;
+  // Add any other fields you expect in your frontmatter
+  [key: string]: any;
+};
+
+/**
+ * Get all case studies from the content directory
+ */
+export async function getAllCaseStudies(): Promise<CaseStudy[]> {
+  try {
+    const fileNames = await fs.readdir(caseStudiesDirectory);
+    const allCaseStudies = await Promise.all(
+      fileNames
+        .filter((fileName) => fileName.endsWith('.md'))
+        .map(async (fileName) => {
+          const slug = fileName.replace('.md', '');
+          const fullPath = path.join(caseStudiesDirectory, fileName);
+          const fileContents = await fs.readFile(fullPath, 'utf8');
+          const { data, content } = matter(fileContents);
+          const processedContent = await remark()
+            .use(html)
+            .process(content);
+          const contentHtml = processedContent.toString();
+          return {
+            slug,
+            title: data.title || '',
+            date: data.date || '',
+            content: contentHtml,
+            ...data,
+          };
+        })
+    );
+    // Sort case studies by date, newest first
+    return allCaseStudies.sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    );
+  } catch (error) {
+    console.error('Error reading case studies:', error);
+    return [];
+  }
+}
+
+/**
+ * Get a single case study by its slug
+ */
+export async function getCaseStudyBySlug(
+  slug: string
+): Promise<CaseStudy | null> {
+  try {
+    const fullPath = path.join(caseStudiesDirectory, `${slug}.md`);
+    const fileContents = await fs.readFile(fullPath, 'utf8');
+    const { data, content } = matter(fileContents);
+    const processedContent = await remark()
+      .use(html)
+      .process(content);
+    const contentHtml = processedContent.toString();
+    return {
+      slug,
+      title: data.title || '',
+      date: data.date || '',
+      content: contentHtml,
+      ...data,
+    };
+  } catch (error) {
+    console.error(`Error reading case study with slug ${slug}:`, error);
+    return null;
+  }
+}
