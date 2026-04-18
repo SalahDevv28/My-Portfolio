@@ -8,7 +8,6 @@ import { NavItem } from '@/lib/types'
 
 const navigation: NavItem[] = [
   { name: 'Home', href: '/' },
-  { name: 'Services', href: '/services' },
   { name: 'Case Studies', href: '/case-studies' },
   { name: 'Contact', href: '/contact' },
 ]
