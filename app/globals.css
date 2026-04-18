@@ -64,6 +64,19 @@
   background: #A855F7;
 }
 
+/* Case studies carousel */
+@keyframes scrollLeft {
+  0%   { transform: translateX(0) }
+  100% { transform: translateX(-50%) }
+}
+.carousel-track {
+  animation: scrollLeft 28s linear infinite;
+  will-change: transform;
+}
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
 /* Selection styling */
 ::selection {
   background: rgba(139, 92, 246, 0.3);

@@ -1,7 +1,7 @@
 ---
 title: "Building a Centralized Task & Project System for a Real Estate Agency"
 date: "18-04-2026"
-client: "RaynorLandingSolutions"
+client: "Raynor Landing Solutions"
 category: "Productivity & Operations"
 featuredImage: "/images/case-studies/real-estate-notion.jpg"
 description: "Designed and built a complete Notion-based system to organize tasks, track projects, and keep the entire team synchronized in real time."

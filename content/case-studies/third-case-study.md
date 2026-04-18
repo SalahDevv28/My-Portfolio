@@ -1,6 +1,6 @@
 ---
 title: "Custom CRM with AI Outreach for a UK-Based Engineering Team"
-date: "2024-09-03"
+date: "18-04-2026"
 client: "British Engineering Team (name withheld)"
 category: "Engineering & Operations"
 featuredImage: "/images/case-studies/british-engineering-crm.jpg"
