@@ -24,22 +24,26 @@ export default async function CaseStudyPage({ params }: { params: { slug: string
   }
 
   return (
-    <section className="py-16">
+    <section className="py-20 bg-black/30 backdrop-blur-sm">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <a href="/case-studies" className="text-sm text-blue-600 hover:underline">
+          <a href="/case-studies" className="text-sm text-purple-400 hover:text-purple-300 transition-colors hover:underline">
             ← Back to all case studies
           </a>
         </div>
-        <h1 className="text-4xl font-bold mb-6">{caseStudy.title}</h1>
-        <p className="text-sm text-gray-500 mb-8">
+        <h1 className="text-5xl font-bold text-white mb-6">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+            {caseStudy.title}
+          </span>
+        </h1>
+        <p className="text-sm text-gray-400 mb-8">
           {new Date(caseStudy.date).toLocaleDateString(undefined, {
             year: 'numeric',
             month: 'long',
             day: 'numeric',
           })}
         </p>
-        <div className="prose prose-lg max-w-none" dangerouslySetInnerHTML={{ __html: caseStudy.content }} />
+        <div className="prose prose-lg max-w-none text-gray-300" dangerouslySetInnerHTML={{ __html: caseStudy.content }} />
       </div>
     </section>
   );

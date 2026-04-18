@@ -1,67 +1,37 @@
----
-title: "Transforming Digital Presence for a Leading Retail Brand"
-date: "2023-10-15"
-client: "RetailCorp Inc."
-category: "Digital Transformation"
-featuredImage: "/images/case-studies/retail-transformation.jpg"
-description: "A comprehensive digital transformation that increased online sales by 150% within six months."
-technicalStack:
-  - React
-  - Next.js
-  - TypeScript
-  - Tailwind CSS
-  - Node.js
-  - PostgreSQL
-outcomes:
-  - "Increased online sales by 150% within 6 months"
-  - "Improved website performance by 40%"
-  - "Enhanced user experience leading to 30% lower bounce rate"
-  - "Streamlined inventory management reducing operational costs by 25%"
-testimonial:
-  author: "Jane Smith"
-  role: "CTO, RetailCorp Inc."
-  content: "SNT Solutions delivered beyond our expectations. Their expertise in modern web technologies helped us achieve our digital goals faster than anticipated."
----
+# Case Study 1: Real Estate Agency
 
-# Challenge
+## The Challenge
 
-RetailCorp Inc. was struggling with an outdated e-commerce platform that was slow, difficult to maintain, and not optimized for mobile users. Their online sales were stagnating, and they needed a complete digital transformation to stay competitive in the rapidly evolving retail landscape.
+A real estate agency was struggling to keep their team aligned. Tasks were scattered across emails and spreadsheets, projects lacked visibility, and there was no single source of truth for what was happening across the business. The team needed a system that would bring everything together — organized, synchronized, and easy to use.
 
-# Solution
+## Our Solution
 
-SNT Solutions partnered with RetailCorp to rebuild their entire digital presence from the ground up. We implemented a modern, scalable architecture using React and Next.js for the frontend, with a robust Node.js backend and PostgreSQL database.
+We designed and built a complete project and task management system inside Notion, tailored specifically to the agency's workflows.
 
-# Implementation
+The system gives every team member a centralized hub where they can:
 
-Our team focused on several key areas:
+- **Manage tasks** — create, assign, and track individual tasks with deadlines, priorities, and statuses
+- **Track projects** — monitor progress across active deals, listings, and internal initiatives in real time
+- **Stay updated** — changes sync instantly across the workspace, so the whole team always sees the latest information
 
-## Performance Optimization
-- Implemented server-side rendering with Next.js for faster initial loads
-- Optimized images and assets using next/image
-- Implemented caching strategies for frequently accessed data
-- Code splitting and lazy loading for improved performance
+## What We Built
 
-## User Experience
-- Mobile-first responsive design
-- Intuitive navigation and product discovery
-- Streamlined checkout process
-- Personalized product recommendations
+The system was designed around three core principles:
 
-## Backend Infrastructure
-- RESTful API architecture
-- Secure payment processing integration
-- Inventory management system
-- Admin dashboard for content management
+**Dynamic** — The workspace adapts as the team's needs evolve. Filters, views, and linked databases make it easy to slice information by team member, project, or deadline without restructuring anything.
 
-# Results
+**Simple** — Despite the depth of the system, the day-to-day experience is clean and intuitive. No steep learning curve, no cluttered dashboards.
 
-The transformation yielded impressive results:
-- Online sales increased by 150% within six months
-- Website performance improved by 40% (measured by Lighthouse scores)
-- Bounce rate decreased by 30%
-- Operational costs reduced by 25% through streamlined processes
-- Customer satisfaction scores improved significantly
+**Collaborative** — Everything is built for teamwork. Shared databases, real-time updates, and clear ownership mean no task falls through the cracks.
 
-# Conclusion
+## Onboarding & Training
 
-This case study demonstrates how a thoughtful, technology-driven approach to digital transformation can yield substantial business results. By focusing on both technical excellence and user experience, we helped RetailCorp not only meet but exceed their digital objectives.
+Delivering the system was only part of the engagement. To ensure the team could hit the ground running, we also:
+
+- Recorded a set of **tutorial videos** walking through each part of the workspace
+- Ran a **live guided walkthrough** with the team, covering real-world use cases specific to their agency
+- Provided documentation and tips for maintaining and expanding the system over time
+
+## Outcome
+
+The real estate agency now operates with a single, reliable system that keeps their team organized and in sync — from the first client inquiry all the way through to closing.
