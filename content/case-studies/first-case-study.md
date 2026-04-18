@@ -15,7 +15,9 @@ outcomes:
 testimonial:
   author: "Agency Director"
   role: "Real Estate Agency"
-  content: "The system completely changed how our team works. Everything is in one place, it's easy to use, and we finally have full visibility on what's happening across the business."
+  content: "“It was a pleasure to collaborate with SNT Solutions. They took the time to understand my requirements, offered a reasonable price, and fulfilled all their promises. They maintained clear communication throughout and scheduled feedback sessions effectively. I truly appreciated their positive attitude!” 
+
+- Jai Raynor, Founder of Raynor Lending Solutions"
 ---
 
 # Case Study 1: Real Estate Agency
