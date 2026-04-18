@@ -3,7 +3,14 @@
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { ArrowRight, Search, X, FileText } from 'lucide-react'
-import { CaseStudy, parseDate } from '@/lib/mdx-utils'
+import { CaseStudy } from '@/lib/mdx-utils'
+
+function parseDate(dateStr: string): Date {
+  if (!dateStr) return new Date(0)
+  const ddmmyyyy = dateStr.match(/^(\d{2})-(\d{2})-(\d{4})$/)
+  if (ddmmyyyy) return new Date(`${ddmmyyyy[3]}-${ddmmyyyy[2]}-${ddmmyyyy[1]}`)
+  return new Date(dateStr)
+}
 
 interface Props {
   caseStudies: CaseStudy[]

@@ -13,7 +13,6 @@ function parseDate(dateStr: string): Date {
   return new Date(dateStr);
 }
 
-export { parseDate };
 
 export type CaseStudy = {
   slug: string;

@@ -1,3 +1,57 @@
 {
-  "pages": {}
+  "pages": {
+    "/_not-found": [
+      "static/chunks/webpack-eec4aace0423b547.js",
+      "static/chunks/fd9d1056-ef38ddb018b86441.js",
+      "static/chunks/938-07d2a72c480e695b.js",
+      "static/chunks/main-app-8206326cd8dad1b9.js",
+      "static/chunks/app/_not-found-d68c3a00a31f48b8.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-eec4aace0423b547.js",
+      "static/chunks/fd9d1056-ef38ddb018b86441.js",
+      "static/chunks/938-07d2a72c480e695b.js",
+      "static/chunks/main-app-8206326cd8dad1b9.js",
+      "static/chunks/743-40d4a3998d7ea5ac.js",
+      "static/css/00d772ac5e5d555e.css",
+      "static/chunks/app/layout-c87158e445a2818c.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-eec4aace0423b547.js",
+      "static/chunks/fd9d1056-ef38ddb018b86441.js",
+      "static/chunks/938-07d2a72c480e695b.js",
+      "static/chunks/main-app-8206326cd8dad1b9.js",
+      "static/chunks/743-40d4a3998d7ea5ac.js",
+      "static/chunks/app/page-a7c523606b3a60f1.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack-eec4aace0423b547.js",
+      "static/chunks/fd9d1056-ef38ddb018b86441.js",
+      "static/chunks/938-07d2a72c480e695b.js",
+      "static/chunks/main-app-8206326cd8dad1b9.js",
+      "static/chunks/app/contact/page-527849955c4c1188.js"
+    ],
+    "/services/page": [
+      "static/chunks/webpack-eec4aace0423b547.js",
+      "static/chunks/fd9d1056-ef38ddb018b86441.js",
+      "static/chunks/938-07d2a72c480e695b.js",
+      "static/chunks/main-app-8206326cd8dad1b9.js",
+      "static/chunks/app/services/page-e3851930918cdf27.js"
+    ],
+    "/case-studies/page": [
+      "static/chunks/webpack-eec4aace0423b547.js",
+      "static/chunks/fd9d1056-ef38ddb018b86441.js",
+      "static/chunks/938-07d2a72c480e695b.js",
+      "static/chunks/main-app-8206326cd8dad1b9.js",
+      "static/chunks/743-40d4a3998d7ea5ac.js",
+      "static/chunks/app/case-studies/page-5ee5abc0b9916204.js"
+    ],
+    "/case-studies/[slug]/page": [
+      "static/chunks/webpack-eec4aace0423b547.js",
+      "static/chunks/fd9d1056-ef38ddb018b86441.js",
+      "static/chunks/938-07d2a72c480e695b.js",
+      "static/chunks/main-app-8206326cd8dad1b9.js",
+      "static/chunks/app/case-studies/[slug]/page-11443a5f6c38b087.js"
+    ]
+  }
 }
