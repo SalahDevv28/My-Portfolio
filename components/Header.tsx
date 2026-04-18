@@ -94,60 +94,64 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Fullscreen Mobile Navigation — outside <header> so backdrop-filter doesn't trap fixed positioning */}
+      {/* Mobile Navigation — backdrop + slide-in drawer */}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-[#0A0A0A]/95 backdrop-blur-md z-[60]">
-          <div className="flex flex-col h-full">
-            {/* Top bar */}
-            <div className="flex items-center justify-between px-4 h-16 border-b border-gray-800">
-              <Link
-                href="/"
-                className="font-heading font-bold text-xl text-white"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                SNT Solutions
-              </Link>
+        <>
+          {/* Backdrop */}
+          <div
+            className="md:hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-[59]"
+            onClick={() => setIsMenuOpen(false)}
+          />
+
+          {/* Drawer */}
+          <div className="md:hidden fixed top-0 right-0 h-full w-72 bg-[#0f0f14] border-l border-white/10 z-[60] flex flex-col shadow-2xl shadow-black/50">
+            {/* Drawer header */}
+            <div className="flex items-center justify-between px-6 h-16 border-b border-white/10">
+              <span className="font-heading font-bold text-white">Menu</span>
               <button
                 onClick={() => setIsMenuOpen(false)}
-                className="p-2 text-gray-300 hover:text-white transition-colors rounded-lg hover:bg-white/10"
+                className="p-2 text-gray-400 hover:text-white transition-colors rounded-lg hover:bg-white/10"
                 aria-label="Close menu"
               >
-                <X size={24} />
+                <X size={20} />
               </button>
             </div>
 
-            {/* Navigation Links */}
-            <div className="flex-1 flex flex-col justify-center px-8 space-y-8">
+            {/* Nav links */}
+            <nav className="flex-1 flex flex-col justify-center px-6 gap-2">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`text-4xl font-bold text-center py-4 transition-colors duration-200 ${
+                  className={`flex items-center gap-3 px-4 py-3.5 rounded-xl text-base font-semibold transition-all duration-200 ${
                     pathname === item.href
-                      ? 'text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400'
-                      : 'text-gray-300 hover:text-purple-400'
+                      ? 'bg-purple-600/10 border border-purple-500/30 text-purple-300'
+                      : 'text-gray-300 hover:bg-white/5 hover:text-white border border-transparent'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
+                  {pathname === item.href && (
+                    <span className="ml-auto w-1.5 h-1.5 rounded-full bg-gradient-to-r from-purple-400 to-pink-400" />
+                  )}
                 </Link>
               ))}
-            </div>
+            </nav>
 
-            {/* CTA Button */}
-            <div className="p-8 border-t border-gray-800">
+            {/* CTA */}
+            <div className="px-6 pb-8 pt-4 border-t border-white/10">
               <a
                 href="https://calendly.com/salahdevv/request-a-call"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold py-4 px-6 rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-300 text-lg"
+                className="block w-full text-center bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold py-3.5 px-6 rounded-xl hover:from-pink-600 hover:to-rose-600 transition-all duration-300 text-sm"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Book a discovery call
               </a>
             </div>
           </div>
-        </div>
+        </>
       )}
     </>
   )

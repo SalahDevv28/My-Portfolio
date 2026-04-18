@@ -8,6 +8,8 @@ const footerLinks = {
     { name: 'AI Agents & Automations', href: '/#services' },
   ],
   company: [
+    { name: 'Home', href: '/' },
+    { name: 'Case Studies', href: '/case-studies' },
     { name: 'Contact', href: '/contact' },
   ],
   resources: [
