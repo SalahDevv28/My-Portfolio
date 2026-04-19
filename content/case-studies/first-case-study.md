@@ -22,7 +22,7 @@ testimonial:
 
 ## The Challenge
 
-A real estate agency was struggling to keep their team aligned. Tasks were scattered across emails and spreadsheets, projects lacked visibility, and there was no single source of truth for what was happening across the business. The team needed a system that would bring everything together — organized, synchronized, and easy to use.
+A real estate agency was struggling to keep their team aligned. Tasks were scattered across emails and spreadsheets, projects lacked visibility, and there was no single source of truth for what was happening across the business. The team needed a system that would bring everything together, organized, synchronized, and easy to use.
 
 ## Our Solution
 

@@ -4,7 +4,7 @@ date: "18-04-2026"
 client: "Purple Jest (name changed to protect client privacy)"
 category: "Real Estate Technology"
 featuredImage: "/images/case-studies/purple-jest-crm.jpg"
-description: "Rebranded an entire real estate agency website, built a fully customized CRM covering leads, sales, emails, tasks, projects, and financials — then layered in an AI-powered system for lead generation and automated client follow-ups."
+description: "Rebranded an entire real estate agency website, built a fully customized CRM covering leads, sales, emails, tasks, projects, and financials, then layered in an AI-powered system for lead generation and automated client follow-ups."
 technicalStack:
   - Notion
   - AI Automation
@@ -17,9 +17,9 @@ outcomes:
   - "Automated lead generation using an AI-powered pipeline"
   - "Automated post-sale client follow-ups, reducing manual outreach effort significantly"
 testimonial:
-  author: "Agency Director"
+  author: "Purple Jest's Owner"
   role: "Purple Jest Real Estate"
-  content: "This project transformed every part of how we operate. From our brand to our back office to how we generate and follow up with leads — everything is sharper, faster, and more professional than ever before."
+  content: "This project transformed every part of how we operate. From our brand to our back office to how we generate and follow up with leads, everything is sharper, faster, and more professional than ever before."
 ---
 
 # Case Study 2: Purple Jest (Real Estate Agency)
@@ -28,7 +28,7 @@ testimonial:
 
 ## The Challenge
 
-Purple Jest is a real estate agency that had outgrown its tools. Their website no longer reflected who they were, their client data lived across disconnected systems, and their team was spending too much time on repetitive tasks that could — and should — be automated.
+Purple Jest is a real estate agency that had outgrown its tools. Their website no longer reflected who they were, their client data lived across disconnected systems, and their team was spending too much time on repetitive tasks that could - and should - be automated.
 
 They needed more than a quick fix. They needed a ground-up transformation: a refreshed brand, a powerful operations system, and intelligent automation that could work in the background while their team focused on closing deals.
 
@@ -40,7 +40,7 @@ We approached the engagement in three interconnected layers: brand, operations, 
 
 ### 1. Website Rebrand
 
-We redesigned and rebuilt the agency's entire website from scratch. The new site reflects a modern, trustworthy identity that speaks directly to their target clients — clean, professional, and built to convert.
+We redesigned and rebuilt the agency's entire website from scratch. The new site reflects a modern, trustworthy identity that speaks directly to their target clients, clean, professional, and built to convert.
 
 Every element was considered: visual identity, copywriting tone, page structure, and user flow. The result is a website the agency is proud to send clients to.
 
@@ -50,72 +50,28 @@ At the core of the project is a bespoke CRM system, built entirely around Purple
 
 The CRM covers six critical areas:
 
-- **Leads** — A structured pipeline to capture, qualify, and track every incoming lead from first contact to conversion
-- **Sales** — Full visibility into active deals, stages, and closing timelines across the team
-- **Emails** — Integrated email tracking so no communication falls through the cracks
-- **Tasks** — Assigned, prioritized, and deadline-driven task management for every team member
-- **Projects** — High-level project tracking to manage complex, multi-step initiatives alongside day-to-day operations
-- **Financials** — A clear view of revenue, commissions, and deal-level financial data in one place
+- **Leads** : A structured pipeline to capture, qualify, and track every incoming lead from first contact to conversion
+- **Sales** : Full visibility into active deals, stages, and closing timelines across the team
+- **Emails** : Integrated email tracking so no communication falls through the cracks
+- **Tasks** : Assigned, prioritized, and deadline-driven task management for every team member
+- **Projects** : High-level project tracking to manage complex, multi-step initiatives alongside day-to-day operations
+- **Financials** : A clear view of revenue, commissions, and deal-level financial data in one place
 
 ### 3. AI-Powered Automation
 
 On top of the CRM, we built an AI-powered layer that handles two of the most time-consuming parts of any real estate business:
 
-**Lead Generation** — The system proactively identifies and surfaces new potential leads, feeding them directly into the CRM pipeline without manual sourcing.
+**Lead Generation** : The system proactively identifies and surfaces new potential leads, feeding them directly into the CRM pipeline without manual sourcing.
 
-**Post-Sale Follow-Ups** — After a deal closes, the AI automatically triggers personalized follow-up sequences with clients — maintaining relationships, encouraging referrals, and keeping the agency top of mind long after the transaction is complete.
+**Post-Sale Follow-Ups** : After a deal closes, the AI automatically triggers personalized follow-up sequences with clients, maintaining relationships, encouraging referrals, and keeping the agency top of mind long after the transaction is complete.
 
 ## Onboarding & Training
 
-Given the scale of the system, onboarding was a major focus. We delivered structured training sessions, recorded walkthrough videos for every module, and provided written documentation so the team could confidently use — and grow — the system on their own.
+Given the scale of the system, onboarding was a major focus. We delivered structured training sessions, recorded walkthrough videos for every module, and provided written documentation so the team could confidently use - and grow - the system on their own.
 
 ## Outcome
 
-Purple Jest now operates with a brand that reflects their ambition and a back office that runs with precision. Their team spends less time on admin and more time with clients. New leads come in automatically. Follow-ups go out without anyone having to remember. And everything — from a new inquiry to a closed deal — lives in one connected system.
+Purple Jest now operates with a brand that reflects their ambition and a back office that runs with precision. Their team spends less time on admin and more time with clients. New leads come in automatically. Follow-ups go out without anyone having to remember. And everything, from a new inquiry to a closed deal, lives in one connected system.
 
 It is the most comprehensive project we have built to date, and it shows what is possible when brand, operations, and AI come together.
 
-# Challenge
-
-HealthPlus Medical Group needed a modern patient portal to replace their outdated system that was difficult to use, lacked mobile support, and didn't meet current security standards. They wanted a solution that would improve patient engagement while ensuring HIPAA compliance.
-
-# Solution
-
-SNT Solutions developed a comprehensive patient portal using modern web technologies with a focus on security, usability, and scalability. The platform includes appointment scheduling, telehealth capabilities, secure messaging, and access to medical records.
-
-# Implementation
-
-## Security & Compliance
-- End-to-end encryption for all patient data
-- HIPAA-compliant hosting on AWS
-- Regular security audits and penetration testing
-- Role-based access control
-
-## Patient Features
-- Secure login with multi-factor authentication
-- Appointment scheduling and reminders
-- Telehealth video consultations
-- Secure messaging with healthcare providers
-- Access to lab results and medical records
-- Prescription refill requests
-
-## Provider Features
-- Dashboard for managing appointments
-- Electronic health record access
-- Prescription management
-- Billing and insurance tools
-- Reporting and analytics
-
-# Results
-
-Since launching the new patient portal:
-- Patient portal adoption increased by 200%
-- Appointment scheduling time reduced by 60%
-- Administrative workload decreased by 35%
-- Patient satisfaction scores improved by 40%
-- No security incidents or compliance violations
-- Improved patient retention rates
-
-# Conclusion
-
-By focusing on both security and user experience, we created a patient portal that not only meets strict healthcare compliance requirements but also delivers a superior experience for both patients and healthcare providers.
