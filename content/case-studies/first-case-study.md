@@ -13,11 +13,9 @@ outcomes:
   - "Reduced reliance on scattered emails and spreadsheets"
   - "Onboarded the full team with tutorial videos and live training"
 testimonial:
-  author: "Agency Director"
+  author: "Jai Raynor, Founder of Raynor Lending Solutions"
   role: "Real Estate Agency"
-  content: "“It was a pleasure to collaborate with SNT Solutions. They took the time to understand my requirements, offered a reasonable price, and fulfilled all their promises. They maintained clear communication throughout and scheduled feedback sessions effectively. I truly appreciated their positive attitude!” 
-
-- Jai Raynor, Founder of Raynor Lending Solutions"
+  content: "“It was a pleasure to collaborate with SNT Solutions. They took the time to understand my requirements, offered a reasonable price, and fulfilled all their promises. They maintained clear communication throughout and scheduled feedback sessions effectively. I truly appreciated their positive attitude!” "
 ---
 
 # Case Study 1: Real Estate Agency
@@ -32,19 +30,19 @@ We designed and built a complete project and task management system inside Notio
 
 The system gives every team member a centralized hub where they can:
 
-- **Manage tasks** — create, assign, and track individual tasks with deadlines, priorities, and statuses
-- **Track projects** — monitor progress across active deals, listings, and internal initiatives in real time
-- **Stay updated** — changes sync instantly across the workspace, so the whole team always sees the latest information
+- **Manage tasks** : create, assign, and track individual tasks with deadlines, priorities, and statuses
+- **Track projects** : monitor progress across active deals, listings, and internal initiatives in real time
+- **Stay updated** : changes sync instantly across the workspace, so the whole team always sees the latest information
 
 ## What We Built
 
 The system was designed around three core principles:
 
-**Dynamic** — The workspace adapts as the team's needs evolve. Filters, views, and linked databases make it easy to slice information by team member, project, or deadline without restructuring anything.
+**Dynamic** : The workspace adapts as the team's needs evolve. Filters, views, and linked databases make it easy to slice information by team member, project, or deadline without restructuring anything.
 
-**Simple** — Despite the depth of the system, the day-to-day experience is clean and intuitive. No steep learning curve, no cluttered dashboards.
+**Simple** : Despite the depth of the system, the day-to-day experience is clean and intuitive. No steep learning curve, no cluttered dashboards.
 
-**Collaborative** — Everything is built for teamwork. Shared databases, real-time updates, and clear ownership mean no task falls through the cracks.
+**Collaborative** : Everything is built for teamwork. Shared databases, real-time updates, and clear ownership mean no task falls through the cracks.
 
 ## Onboarding & Training
 
@@ -56,4 +54,4 @@ Delivering the system was only part of the engagement. To ensure the team could 
 
 ## Outcome
 
-The real estate agency now operates with a single, reliable system that keeps their team organized and in sync — from the first client inquiry all the way through to closing.
+The real estate agency now operates with a single, reliable system that keeps their team organized and in sync, from the first client inquiry all the way through to closing.
