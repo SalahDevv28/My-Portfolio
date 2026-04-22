@@ -264,6 +264,31 @@
   border-bottom-color: #f472b6;
 }
 
+.case-study-content .live-site-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.75rem 0;
+  padding: 0.875rem 2rem;
+  background: linear-gradient(to right, #ec4899, #f43f5e);
+  color: #ffffff !important;
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  border-bottom: none !important;
+  text-decoration: none;
+  box-shadow: 0 4px 24px rgba(236, 72, 153, 0.35);
+  transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.case-study-content .live-site-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(236, 72, 153, 0.45);
+  border-bottom: none !important;
+}
+
 .case-study-content img {
   border-radius: 0.75rem;
   max-width: 100%;
