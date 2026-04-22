@@ -16,7 +16,6 @@ outcomes:
   - "Unified lead management, sales tracking, email, tasks, projects, and financials in one place"
   - "Automated lead generation using an AI-powered pipeline"
   - "Automated post-sale client follow-ups, reducing manual outreach effort significantly"
-the website: https://purple-jest.vercel.app/
 testimonial:
   author: "Purple Jest's Owner"
   role: "Purple Jest Real Estate"
@@ -44,6 +43,8 @@ We approached the engagement in three interconnected layers: brand, operations, 
 We redesigned and rebuilt the agency's entire website from scratch. The new site reflects a modern, trustworthy identity that speaks directly to their target clients, clean, professional, and built to convert.
 
 Every element was considered: visual identity, copywriting tone, page structure, and user flow. The result is a website the agency is proud to send clients to.
+
+[View the live website →](https://purple-jest.vercel.app/)
 
 ### 2. Fully Customized CRM System
 
