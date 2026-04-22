@@ -71,7 +71,7 @@ export async function getCaseStudyBySlug(
     const fileContents = await fs.readFile(fullPath, 'utf8');
     const { data, content } = matter(fileContents);
     const processedContent = await remark()
-      .use(html)
+      .use(html, { sanitize: false })
       .process(content);
     const contentHtml = processedContent.toString();
     return {
