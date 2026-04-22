@@ -44,48 +44,53 @@ We redesigned and rebuilt the agency's entire website from scratch. The new site
 
 Every element was considered: visual identity, copywriting tone, page structure, and user flow. The result is a website the agency is proud to send clients to.
 
-<a href="https://purple-jest.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-site-btn">View the live website ↗</a>
+<div class="live-site-wrapper">
+  <a href="https://purple-jest.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-site-mockup">
+    <img src="/images/case-studies/second-case-study/362_1x_shots_so.png" alt="Purple Jest website mockup" />
+  </a>
+  <a href="https://purple-jest.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-site-btn">View the live website ↗</a>
+</div>
 
 ### 2. Fully Customized CRM System
 
 At the core of the project is a bespoke CRM system, built entirely around Purple Jest's workflows. Rather than forcing the team to adapt to off-the-shelf software, we built a system that works exactly the way they do.
 
-The CRM opens with a live dashboard giving the entire team instant visibility into what matters most.
+The CRM opens with a live dashboard: a single view showing monthly income, occupancy rate, active leads, and current vacancies, so the whole team starts every day with a clear picture of where things stand.
 
-![CRM Dashboard — live KPIs, income, occupancy, and active leads at a glance](/images/case-studies/second-case-study/dashboard.png)
+![CRM Dashboard - monthly income, occupancy, active leads, and vacancies at a glance](/images/case-studies/second-case-study/dashboard.png)
 
-The CRM covers six critical areas:
+The system is built around six core modules:
 
-- **Leads** : A structured pipeline to capture, qualify, and track every incoming lead from first contact to conversion
-- **Sales** : Full visibility into active deals, stages, and closing timelines across the team
-- **Emails** : Integrated email tracking so no communication falls through the cracks
-- **Tasks** : Assigned, prioritized, and deadline-driven task management for every team member
-- **Projects** : High-level project tracking to manage complex, multi-step initiatives alongside day-to-day operations
-- **Financials** : A clear view of revenue, commissions, and deal-level financial data in one place
+- **Properties & Listings** : Every unit in the portfolio in one place, status, district, beds, rent, and assigned agent, all filterable and searchable
+- **Leads & Applicants** : A kanban pipeline that tracks every enquiry from first contact through viewing, application, offer, and archive
+- **Calendar** : A shared team calendar for viewings, signings, open houses, and internal meetings, colour-coded by event type
+- **Inbox** : All client correspondence linked directly to the relevant property and lead, so every reply has full context
+- **Reports & Analytics** : Revenue, net profit, average days on market, and lead-to-lease conversion, tracked over time and exportable as PDF
+- **Team** : Each agent's listings, leads, and events in one view, making workload and performance visible across the whole firm
 
-**Properties & Listings** — every unit in the portfolio, filterable by status, district, and agent, with occupancy tracked in real time.
+**Properties & Listings** : 12 units across four districts, each with occupancy status, rent, and assigned agent tracked in real time.
 
-![Properties & Listings — 12 units across four districts, filterable by status](/images/case-studies/second-case-study/properties-listings.png)
+![Properties & Listings - full portfolio filterable by status, district, and agent](/images/case-studies/second-case-study/properties-listings.png)
 
-**Leads & Applicants** — a kanban board that moves leads from first enquiry through viewing, application, and offer, with source tracking and conversion rates visible at a glance.
+**Leads & Applicants** - every enquiry moves through a kanban board from New → Viewing → Applied → Offered → Archived, with lead source and fit score visible on each card.
 
-![Leads & Applicants — kanban pipeline from first contact to keys handed over](/images/case-studies/second-case-study/leads-applicants.png)
+![Leads & Applicants - kanban pipeline with source tracking and a 42% conversion rate](/images/case-studies/second-case-study/leads-applicants.png)
 
-**Calendar** — viewings, signings, and open houses in a shared team calendar, colour-coded by event type so nothing gets double-booked.
+**Calendar** : viewings, signings, open houses, and internal standups all in one shared calendar, colour-coded so the team always knows what type of appointment they're looking at.
 
-![Calendar — viewings, signings, and open houses across the full team](/images/case-studies/second-case-study/calendar.png)
+![Calendar - week view with viewings, signings, and open houses colour-coded by type](/images/case-studies/second-case-study/calendar.png)
 
-**Inbox** — all client correspondence linked directly to properties and leads, so every conversation has context and nothing falls through the cracks.
+**Inbox** : client messages are linked to the property and lead they relate to, so no reply ever goes out without the full picture.
 
-![Inbox — correspondence linked to properties and leads](/images/case-studies/second-case-study/inbox.png)
+![Inbox - correspondence linked to properties and leads, with threaded conversation view](/images/case-studies/second-case-study/inbox.png)
 
-**Reports & Analytics** — revenue, profit, days on market, and lead-to-lease conversion tracked over time, with exportable PDF reports.
+**Reports & Analytics** - shows the revenue of a certain period configured by user (6months, a year...etc)
 
-![Reports & Analytics — revenue, profit margin, and lead conversion over six months](/images/case-studies/second-case-study/reports-analytics.png)
+![Reports & Analytics - revenue, profit, days on market, and lead-to-lease over six months](/images/case-studies/second-case-study/reports-analytics.png)
 
-**Team** — each agent's listings, leads, and events in one place, making workload and performance visible across the whole firm.
+**Team** : all agents and team members, each with their own profile showing active listings, open leads, and upcoming events, so management always knows who's carrying what.
 
-![Team — agent profiles with listings, leads, and event counts](/images/case-studies/second-case-study/team.png)
+![Team - six agent profiles with listings, leads, and event counts](/images/case-studies/second-case-study/team.png)
 
 ### 3. AI-Powered Automation
 
