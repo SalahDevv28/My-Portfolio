@@ -16,6 +16,7 @@ outcomes:
   - "Unified lead management, sales tracking, email, tasks, projects, and financials in one place"
   - "Automated lead generation using an AI-powered pipeline"
   - "Automated post-sale client follow-ups, reducing manual outreach effort significantly"
+the website: https://purple-jest.vercel.app/
 testimonial:
   author: "Purple Jest's Owner"
   role: "Purple Jest Real Estate"
@@ -48,6 +49,10 @@ Every element was considered: visual identity, copywriting tone, page structure,
 
 At the core of the project is a bespoke CRM system, built entirely around Purple Jest's workflows. Rather than forcing the team to adapt to off-the-shelf software, we built a system that works exactly the way they do.
 
+The CRM opens with a live dashboard giving the entire team instant visibility into what matters most.
+
+![CRM Dashboard — live KPIs, income, occupancy, and active leads at a glance](/images/case-studies/second-case-study/dashboard.png)
+
 The CRM covers six critical areas:
 
 - **Leads** : A structured pipeline to capture, qualify, and track every incoming lead from first contact to conversion
@@ -56,6 +61,30 @@ The CRM covers six critical areas:
 - **Tasks** : Assigned, prioritized, and deadline-driven task management for every team member
 - **Projects** : High-level project tracking to manage complex, multi-step initiatives alongside day-to-day operations
 - **Financials** : A clear view of revenue, commissions, and deal-level financial data in one place
+
+**Properties & Listings** — every unit in the portfolio, filterable by status, district, and agent, with occupancy tracked in real time.
+
+![Properties & Listings — 12 units across four districts, filterable by status](/images/case-studies/second-case-study/properties-listings.png)
+
+**Leads & Applicants** — a kanban board that moves leads from first enquiry through viewing, application, and offer, with source tracking and conversion rates visible at a glance.
+
+![Leads & Applicants — kanban pipeline from first contact to keys handed over](/images/case-studies/second-case-study/leads-applicants.png)
+
+**Calendar** — viewings, signings, and open houses in a shared team calendar, colour-coded by event type so nothing gets double-booked.
+
+![Calendar — viewings, signings, and open houses across the full team](/images/case-studies/second-case-study/calendar.png)
+
+**Inbox** — all client correspondence linked directly to properties and leads, so every conversation has context and nothing falls through the cracks.
+
+![Inbox — correspondence linked to properties and leads](/images/case-studies/second-case-study/inbox.png)
+
+**Reports & Analytics** — revenue, profit, days on market, and lead-to-lease conversion tracked over time, with exportable PDF reports.
+
+![Reports & Analytics — revenue, profit margin, and lead conversion over six months](/images/case-studies/second-case-study/reports-analytics.png)
+
+**Team** — each agent's listings, leads, and events in one place, making workload and performance visible across the whole firm.
+
+![Team — agent profiles with listings, leads, and event counts](/images/case-studies/second-case-study/team.png)
 
 ### 3. AI-Powered Automation
 
