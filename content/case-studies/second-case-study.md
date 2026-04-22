@@ -44,7 +44,7 @@ We redesigned and rebuilt the agency's entire website from scratch. The new site
 
 Every element was considered: visual identity, copywriting tone, page structure, and user flow. The result is a website the agency is proud to send clients to.
 
-[View the live website →](https://purple-jest.vercel.app/)
+<a href="https://purple-jest.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-site-btn">View the live website ↗</a>
 
 ### 2. Fully Customized CRM System
 
