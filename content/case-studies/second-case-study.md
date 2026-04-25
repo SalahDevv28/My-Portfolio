@@ -68,7 +68,7 @@ The system is built around six core modules:
 - **Reports & Analytics** : Revenue, net profit, average days on market, and lead-to-lease conversion, tracked over time and exportable as PDF
 - **Team** : Each agent's listings, leads, and events in one view, making workload and performance visible across the whole firm
 
-**Properties & Listings** : 12 units across four districts, each with occupancy status, rent, and assigned agent tracked in real time.
+**Properties & Listings** - all units, each with occupancy status, rent, and assigned agent tracked in real time.
 
 ![Properties & Listings - full portfolio filterable by status, district, and agent](/images/case-studies/second-case-study/properties-listings.png)
 
