@@ -1,19 +1,19 @@
 ---
-title: "Custom Engineering CRM with AI Outreach for a UK-Based Engineering Team"
+title: "Custom Engineering CRM with AI Outreach for the Meridian Engineering Team"
 date: "18-04-2026"
 client: "Meridian Team (name changed for privacy purposes)"
 category: "Engineering & Operations"
 featuredImage: "/images/case-studies/british-engineering-crm.jpg"
-description: "Built a fully customized engineering CRM for a UK-based team to manage projects, tasks, clients, and outreach — with an AI layer that drafts follow-ups, flags at-risk relationships, and saves over 11 hours a week."
+description: "Built a fully customized engineering CRM for an engineering team to manage projects, tasks, clients, and outreach, with an AI layer that drafts follow-ups, flags at-risk relationships, and saves over 11 hours a week."
 technicalStack:
   - Notion
   - AI Automation
   - CRM Development
 outcomes:
   - "Unified projects, tasks, clients, and outreach into a single workspace"
-  - "38.2% outreach reply rate, 6.1 pts above the 28-day average"
+  - "Raised outreach reply rate"
   - "11.4 hours saved per week through AI-drafted communication"
-  - "£184k pipeline influenced by AI outreach sequences"
+  - "Increased pipeline revenue influenced by AI outreach sequences"
   - "83% team utilisation tracked in real time across 5 engineers"
 testimonial:
   author: "Team Lead"
@@ -25,7 +25,7 @@ testimonial:
 
 ## The Challenge
 
-A UK-based engineering team was growing fast but their tools weren't keeping up. Project progress was scattered, client relationships were managed manually, and outreach to prospects and existing clients consumed time that should have gone into engineering work.
+The Meridian engineering team was growing fast but their tools weren't keeping up. Project progress was scattered, client relationships were managed manually, and outreach to prospects and existing clients consumed time that should have gone into engineering work.
 
 They needed a single structured system, one that could keep the team aligned on every active project, track client relationships intelligently, and take the repetitive side of client communication off their plate entirely.
 
