@@ -37,13 +37,13 @@ The system opens with a personal home dashboard that gives each team member an i
 
 ![Dashboard - daily briefing with project count, open tasks, reply rate, and live KPIs](/images/case-studies/third-case-study/dashboard.png)
 
-The dashboard surfaces what matters immediately: 9 active projects, 47 open tasks, a 38% reply rate, billable hours against plan, pipeline value, invoiced revenue month-to-date, and team utilisation, all updated in real time. The Outreach Copilot banner flags drafts waiting for review before anything goes out.
+The dashboard surfaces what matters immediately: active projects, open tasks, the reply rate, billable hours against plan, pipeline value, invoiced revenue month-to-date, and team utilisation, all updated in real time. The Outreach Copilot banner flags drafts waiting for review before anything goes out.
 
 The system is built around seven core modules:
 
 - **Projects** : Full pipeline visibility from scoping through to client review, in a kanban board with risk flags and AI-suggested nudges
 - **Tasks** : Every task across every project in one list, grouped by due date, filterable by project, priority, or assignee
-- **Clients** : All 38 client companies tracked with LTV, active projects, last contact, and AI dormancy alerts
+- **Clients** : All client companies tracked with LTV, active projects, last contact, and AI dormancy alerts
 - **Inbox** : Every message linked to its project and client, AI pre-summarised so nothing needs to be read twice
 - **Outreach** : AI-drafted sequences and nudges, queued for your review before sending, nothing goes out automatically
 - **Reports** : Revenue, utilisation, pipeline health, and AI impact tracked by quarter and exportable as PDF
@@ -67,7 +67,7 @@ The system is built around seven core modules:
 
 ![Inbox - AI pre-summarised messages linked to projects, clients, and outreach sequences](/images/case-studies/third-case-study/inbox.png)
 
-**Outreach** : The AI drafts nudges, warm-ups, and close-out messages grounded in each project's current state and the client's conversation history. Nothing generic, nothing sent without approval. The result: a 38.2% reply rate, 7 meetings booked in the last fortnight, 11.4 hours saved per week, and £184k of pipeline directly influenced by active sequences.
+**Outreach** : The AI drafts nudges, warm-ups, and close-out messages grounded in each project's current state and the client's conversation history. Nothing generic, nothing sent without approval.
 
 ![Outreach - AI-drafted queue with 38.2% reply rate, 7 meetings booked, and £184k pipeline influenced](/images/case-studies/third-case-study/outreach.png)
 
