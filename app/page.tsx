@@ -2,9 +2,6 @@ import Link from 'next/link'
 import {
   ArrowRight,
   Bot,
-  Users,
-  Award,
-  Zap,
   CheckCircle,
   MessageCircle,
   Search,
@@ -15,13 +12,6 @@ import {
 } from 'lucide-react'
 import SectionDivider from '@/components/SectionDivider'
 import CaseStudiesCarousel from '@/components/CaseStudiesCarousel'
-
-const stats = [
-  { label: 'Projects Delivered', value: '10+', icon: Award },
-  { label: 'Happy Clients',       value: '3+',  icon: Users },
-  { label: 'AI-Powered Solutions',value: '100%',icon: Zap },
-  { label: 'Response Time',       value: '<24h', icon: Zap },
-]
 
 const services = [
   {
@@ -80,26 +70,6 @@ export default function HomePage() {
                 Get in touch
               </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-10 bg-black/30 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-6 lg:px-24">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {stats.map((stat) => {
-              const Icon = stat.icon
-              return (
-                <div key={stat.label} className="text-center group">
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-full mb-3 group-hover:scale-110 transition-transform">
-                    <Icon className="w-6 h-6 text-purple-400" />
-                  </div>
-                  <div className="text-2xl lg:text-3xl font-bold text-white mb-1">{stat.value}</div>
-                  <div className="text-sm text-gray-400">{stat.label}</div>
-                </div>
-              )
-            })}
           </div>
         </div>
       </section>
