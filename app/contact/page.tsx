@@ -9,7 +9,6 @@ export default function ContactPage() {
     email: '',
     company: '',
     projectType: '',
-    budget: '',
     message: '',
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -40,21 +39,28 @@ export default function ContactPage() {
     }
 
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000))
-      
-      setIsSuccess(true)
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        projectType: '',
-        budget: '',
-        message: '',
+      const response = await fetch('https://formspree.io/f/xlgzezdb', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       })
-      
-      // Reset success state after 5 seconds
-      setTimeout(() => setIsSuccess(false), 5000)
+
+      if (response.ok) {
+        setIsSuccess(true)
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          projectType: '',
+          message: '',
+        })
+        setTimeout(() => setIsSuccess(false), 5000)
+      } else {
+        throw new Error('Form submission failed')
+      }
     } catch (err) {
       setError('Something went wrong. Please try again.')
     } finally {
@@ -157,47 +163,26 @@ export default function ContactPage() {
                     />
                   </div>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="projectType" className="block text-sm font-medium text-gray-300 mb-2">
-                        What do you need?
-                      </label>
-                      <select
-                        id="projectType"
-                        name="projectType"
-                        value={formData.projectType}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-colors appearance-none"
-                      >
-                        <option value="">Select a service</option>
-                        <option value="website">Modern Website</option>
-                        <option value="notion">Notion System & Setup</option>
-                        <option value="ai-automation">AI Agents & Automations</option>
-                        <option value="website-notion">Website + Notion System</option>
-                        <option value="full-package">Full Digital Transformation</option>
-                        <option value="consulting">Consulting</option>
-                        <option value="other">Other</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label htmlFor="budget" className="block text-sm font-medium text-gray-300 mb-2">
-                        Estimated Budget
-                      </label>
-                      <select
-                        id="budget"
-                        name="budget"
-                        value={formData.budget}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-colors appearance-none"
-                      >
-                        <option value="">Select budget range</option>
-                        <option value="1k-3k">$1,000 - $3,000</option>
-                        <option value="3k-5k">$3,000 - $5,000</option>
-                        <option value="5k-10k">$5,000 - $10,000</option>
-                        <option value="10k-20k">$10,000 - $20,000</option>
-                        <option value="20k+">$20,000+</option>
-                      </select>
-                    </div>
+                  <div>
+                    <label htmlFor="projectType" className="block text-sm font-medium text-gray-300 mb-2">
+                      What do you need?
+                    </label>
+                    <select
+                      id="projectType"
+                      name="projectType"
+                      value={formData.projectType}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-colors appearance-none"
+                    >
+                      <option value="">Select a service</option>
+                      <option value="website">Modern Website</option>
+                      <option value="notion">Notion System & Setup</option>
+                      <option value="ai-automation">AI Agents & Automations</option>
+                      <option value="website-notion">Website + Notion System</option>
+                      <option value="full-package">Full Digital Transformation</option>
+                      <option value="consulting">Consulting</option>
+                      <option value="other">Other</option>
+                    </select>
                   </div>
                   
                   <div>
