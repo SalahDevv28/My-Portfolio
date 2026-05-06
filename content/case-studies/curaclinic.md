@@ -4,9 +4,10 @@ date: "06-05-2026"
 client: "CuraClinic"
 category: "Healthcare Technology"
 featuredImage: "/images/case-studies/CuraClinic-case-study/patients.png"
-description: "Built a comprehensive clinic management system for appointment scheduling, patient records, staff task management, automated reminders, and post-visit follow-ups — designed to reduce missed appointments and streamline daily operations."
+description: "Built a comprehensive clinic management system for appointment scheduling, patient records, staff task management, automated reminders, and post-visit follow-ups, designed to reduce missed appointments and streamline daily operations."
 technicalStack:
-  - Notion
+  - Front-end stack (ts, js, tailwind, nextjs ..etc)
+  - Back-end stack for authentification and databases
   - Healthcare Management
 outcomes:
   - "Centralized appointment scheduling with calendar view and daily dashboard"
@@ -22,7 +23,7 @@ outcomes:
 
 CuraClinic is a small medical clinic that was struggling with operational inefficiency. Appointments were managed through scattered notes and phone calls, patient records were difficult to access, and staff had no unified way to track daily tasks or follow-ups. Missed appointments were common, and important post-visit care was sometimes forgotten.
 
-They needed a single, clean system that would bring together appointment scheduling, patient management, staff workflows, and automated communication — without the complexity or cost of enterprise healthcare software.
+They needed a single, clean system that would bring together appointment scheduling, patient management, staff workflows, and automated communication, without the complexity or cost of enterprise healthcare software.
 
 ## Our Solution
 
@@ -32,7 +33,7 @@ We built a complete clinic management system tailored specifically for CuraClini
   <a href="https://cura-clinic.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-site-mockup">
     <img src="/images/case-studies/CuraClinic-case-study/dashboard.png" alt="CuraClinic live website" />
   </a>
-  <a href="https://cura-clinic.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-site-btn">View the live website ↗</a>
+  <a href="https://cura-clinic.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-site-btn">View the live mock-up website ↗</a>
 </div>
 
 ### 1. Daily Dashboard
@@ -55,7 +56,7 @@ A detailed table view lists all appointments with patient names, visit types, du
 
 ### 3. Patient Database
 
-All patient information is stored in a centralized, searchable database. Each patient card displays contact details, date of birth, and visit count — giving staff immediate context before any appointment.
+All patient information is stored in a centralized, searchable database. Each patient card displays contact details, date of birth, and visit count, giving staff immediate context before any appointment.
 
 ![Patients - searchable database with patient cards showing contact info and visit history](/images/case-studies/CuraClinic-case-study/patients.png)
 
@@ -85,11 +86,11 @@ After each visit, the system tracks required follow-ups with clear status indica
 
 The system was built around three guiding principles:
 
-**Clean** : The interface is intentionally simple, with a soft pink color scheme that feels welcoming and professional — appropriate for a healthcare environment. No clutter, no unnecessary features.
+**Clean** : The interface is intentionally simple, with a soft pink color scheme that feels welcoming and professional, appropriate for a healthcare environment. No clutter, no unnecessary features.
 
 **Connected** : Every module links to the others. A patient record connects to their appointments, tasks reference specific patients, and follow-ups tie back to visit history. Nothing exists in isolation.
 
-**Actionable** : Every screen is designed to help staff take action — schedule an appointment, send a reminder, complete a task, or follow up with a patient. Information is always paired with the ability to act on it.
+**Actionable** : Every screen is designed to help staff take action, schedule an appointment, send a reminder, complete a task, or follow up with a patient. Information is always paired with the ability to act on it.
 
 ## Outcome
 
