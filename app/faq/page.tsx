@@ -6,7 +6,7 @@ import { ChevronDown, HelpCircle } from 'lucide-react'
 const faqs = [
   {
     question: 'How does the process work?',
-    answer: 'First, you send me an email describing your project, your goals, and (if available) your website. Then we schedule a call via Calendly to discuss your needs. I propose a structure and provide an estimate that fits in your budget. If we agree to proceed, I send a detailed Scope of work outlining deliverables, expected timeline, and next steps.',
+    answer: 'First, you send us an email describing your project, your goals, and (if available) your website. Then we schedule a call via Calendly to discuss your needs. We propose a structure and provide an estimate that fits in your budget. If we agree to proceed, We email you a detailed Scope of work outlining deliverables, expected timeline, and next steps.',
   },
   {
     question: 'Can I request changes after the project?',
@@ -26,11 +26,11 @@ const faqs = [
   },
   {
     question: "What if I don't know exactly what I want?",
-    answer: 'During our initial call, I help clarify your goals and design a structure that fits your needs before work begins.',
+    answer: 'During our initial call, We help clarify your goals and design a structure that fits your needs before work begins.',
   },
   {
     question: 'How do you ensure my data remains private?',
-    answer: "All project data and materials are kept confidential and secure throughout the process, I'll ask for consent before posting the project on the portfolio, and I won't use the actual material in the pictures to keep your data private.",
+    answer: "All project data and materials are kept confidential and secure throughout the process, We'll ask for consent before posting the project on the portfolio, and We won't use the actual material in the pictures to keep your data private.",
   },
 ]
 
