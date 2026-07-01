@@ -31,10 +31,23 @@ const BG_GRADIENTS = [
   'linear-gradient(135deg,#2e1065 0%,#4c1d95 50%,#8b5cf6 100%)',
 ]
 
-/* Each thumbnail is plain JSX — no client JS needed */
-function Thumbnail({ slug }: { slug: string }) {
+/* Each thumbnail uses the case study cover image when available */
+function Thumbnail({ slug, featuredImage, title }: { slug: string; featuredImage?: string; title: string }) {
   const bgIdx = slugIndex(slug, BG_GRADIENTS.length)
   const p     = slugIndex(slug + 'p', 6)
+
+  if (featuredImage) {
+    return (
+      <div className="relative h-40 overflow-hidden flex-shrink-0">
+        <img
+          src={featuredImage}
+          alt={title}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-black/50 to-transparent" />
+      </div>
+    )
+  }
 
   const overlay = (() => {
     switch (p) {
@@ -104,7 +117,7 @@ function CarouselCard({ cs }: { cs: CaseStudy }) {
       href={`/case-studies/${cs.slug}`}
       className="group flex-shrink-0 w-72 flex flex-col bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-purple-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-purple-900/20"
     >
-      <Thumbnail slug={cs.slug} />
+      <Thumbnail slug={cs.slug} featuredImage={cs.featuredImage} title={cs.title} />
 
       <div className="flex flex-col flex-1 p-5">
         {/* Category + date */}
