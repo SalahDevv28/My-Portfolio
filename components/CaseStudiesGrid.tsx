@@ -192,8 +192,16 @@ export default function CaseStudiesGrid({ caseStudies }: Props) {
                 className="group flex flex-col bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-purple-500/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-900/20"
               >
                 {/* ── Thumbnail ── */}
-                <div className="relative h-44 flex-shrink-0 overflow-hidden" style={{ background: BG_GRADIENTS[bgIdx] }}>
-                  {THUMBNAIL_PATTERNS[patternIdx]}
+                <div className="relative h-44 flex-shrink-0 overflow-hidden" style={cs.featuredImage ? undefined : { background: BG_GRADIENTS[bgIdx] }}>
+                  {cs.featuredImage ? (
+                    <img
+                      src={cs.featuredImage}
+                      alt={cs.title}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  ) : (
+                    THUMBNAIL_PATTERNS[patternIdx]
+                  )}
 
                   {/* Bottom fade into card body */}
                   <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-black/50 to-transparent" />

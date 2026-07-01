@@ -3,7 +3,7 @@ title: "CuraClinic - Complete Clinic Management System"
 date: "06-05-2026"
 client: "CuraClinic"
 category: "Healthcare Technology"
-featuredImage: "/images/case-studies/CuraClinic-case-study/patients.png"
+featuredImage: "/images/case-studies/CuraClinic-case-study/curaclinic-cover-v2.svg"
 description: "Built a comprehensive clinic management system for appointment scheduling, patient records, staff task management, automated reminders, and post-visit follow-ups, designed to reduce missed appointments and streamline daily operations."
 technicalStack:
   - Front-end stack (ts, js, tailwind, nextjs ..etc)

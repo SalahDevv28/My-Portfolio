@@ -3,7 +3,7 @@ title: "Custom Engineering CRM with AI Outreach for the Meridian Engineering Tea
 date: "18-04-2026"
 client: "Meridian Team (name changed for privacy purposes)"
 category: "Engineering & Operations"
-featuredImage: "/images/case-studies/british-engineering-crm.jpg"
+featuredImage: "/images/case-studies/third-case-study/meridian-cover.svg"
 description: "Built a fully customized engineering CRM for an engineering team to manage projects, tasks, clients, and outreach, with an AI layer that drafts follow-ups, flags at-risk relationships, and saves over 11 hours a week per engineer."
 technicalStack:
   - Notion

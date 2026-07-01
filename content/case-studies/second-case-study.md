@@ -3,7 +3,7 @@ title: "Full-Scale Rebrand, Custom CRM & AI Automation for a Real Estate Agency"
 date: "18-04-2026"
 client: "Purple Jest (name changed to protect client privacy)"
 category: "Real Estate Technology"
-featuredImage: "/images/case-studies/purple-jest-crm.jpg"
+featuredImage: "/images/case-studies/second-case-study/purplejest-cover.svg"
 description: "Rebranded an entire real estate agency website, built a fully customized CRM covering leads, sales, emails, tasks, projects, and financials, then layered in an AI-powered system for lead generation and automated client follow-ups."
 technicalStack:
   - Notion
