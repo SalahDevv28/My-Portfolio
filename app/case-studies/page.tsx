@@ -5,7 +5,7 @@ import CaseStudiesGrid from '@/components/CaseStudiesGrid';
 
 export const metadata = {
   title: 'Case Studies',
-  description: 'Real projects, real results — explore how we help businesses transform their digital presence.',
+  description: 'Real projects, real results, explore how we help businesses transform their digital presence.',
 };
 
 export default async function CaseStudiesPage() {
@@ -29,7 +29,7 @@ export default async function CaseStudiesPage() {
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Explore how we help businesses build smarter digital systems — from modern websites
+            Explore how we help businesses build smarter digital systems, from modern websites
             to AI-powered automations.
           </p>
         </div>

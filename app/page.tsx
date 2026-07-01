@@ -45,13 +45,12 @@ export default function HomePage() {
         <div className="relative z-10 max-w-7xl mx-auto text-center">
           <div className="animate-fade-in">
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              We Build <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Intelligent</span>
+              We Build <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">You</span>
               <br />
-              Digital Solutions
+              Intelligent Digital Solutions
             </h1>
             <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-              From modern websites to AI-powered Notion systems and automations — we help businesses
-              transform their digital presence and operate at peak efficiency.
+              We help you transform your digital presence and operate at peak efficiency.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
@@ -144,7 +143,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors">Design with Purpose</h3>
               <p className="text-gray-400 leading-relaxed mb-4">
-                Clean, intuitive design isn&apos;t just about aesthetics — it&apos;s about creating systems that people actually want to use.
+                Clean, intuitive design isn&apos;t just about aesthetics, it&apos;s about creating systems that people actually want to use.
               </p>
               <p className="text-gray-300 text-sm">
                 We craft workspaces that are both beautiful and functional, with careful attention to user experience and information architecture.
