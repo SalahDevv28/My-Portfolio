@@ -1,4 +1,4 @@
-<svg width="100%" viewBox="0 0 268 268" xmlns="http://www.w3.org/2000/svg" role="img" style="">
+<svg width="100%" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg" role="img">
 <title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">SNT network icon, bordered and centered</title>
 <desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">A near-black rounded square with a thin gradient border outline, a gradient hub centered in the middle of the icon, connected by eleven thicker gradient lines of varied non-sequential length to eleven outer nodes of varying size at irregular positions</desc>
 <defs>
@@ -7,7 +7,7 @@
 <stop offset="1" stop-color="#F0467A"/>
 </linearGradient>
 </defs>
-<rect x="2" y="2" width="256" height="256" rx="48" fill="#0B0A12" stroke="url(#gk)" stroke-width="3" style="fill:rgb(11, 10, 18);color:rgb(11, 11, 11);stroke-width:3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <rect x="0" y="0" width="260" height="260" rx="48" fill="#0B0A12" stroke="url(#gk)" stroke-width="3"/>
 <line x1="130" y1="130" x2="212" y2="130" stroke="url(#gk)" stroke-width="4" stroke-linecap="round" opacity="0.5" style="fill:rgb(0, 0, 0);color:rgb(11, 11, 11);stroke-width:4px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
 <line x1="130" y1="130" x2="189" y2="168" stroke="url(#gk)" stroke-width="5.5" stroke-linecap="round" opacity="0.5" style="fill:rgb(0, 0, 0);color:rgb(11, 11, 11);stroke-width:5.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
 <line x1="130" y1="130" x2="167" y2="214" stroke="url(#gk)" stroke-width="4" stroke-linecap="round" opacity="0.5" style="fill:rgb(0, 0, 0);color:rgb(11, 11, 11);stroke-width:4px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>

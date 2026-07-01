@@ -55,7 +55,7 @@ export default function Header() {
               <img
                 src="/images/snt-logo-header.svg"
                 alt="SNT Solutions"
-                className="h-9 w-9 rounded-lg"
+                className="h-9 w-9 rounded-[10px] object-cover"
               />
               <span className="font-heading font-bold text-xl text-white group-hover:text-purple-300 transition-colors">
                 SNT Solutions

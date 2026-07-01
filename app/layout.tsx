@@ -49,6 +49,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: '/icon.svg',
+  },
   openGraph: {
     title: 'SNT Solutions - Building Websites, AI Systems & Automations',
     description: 'We build modern websites, customized Notion systems with AI, and intelligent automations that help businesses grow.',
