@@ -145,7 +145,7 @@ export default async function CaseStudyPage({ params }: { params: { slug: string
           {caseStudy.testimonial && (
             <div className="mt-14 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 hover:border-purple-500/50 transition-all duration-300">
               <div className="flex items-start gap-4">
-                <span className="text-4xl text-transparent bg-clip-text bg-gradient-to-b from-purple-400 to-pink-400 leading-none select-none font-bold">"</span>
+                <span className="text-4xl text-transparent bg-clip-text bg-gradient-to-b from-purple-400 to-pink-400 leading-none select-none font-bold">&quot;</span>
                 <div>
                   <p className="text-gray-200 text-lg italic leading-relaxed mb-4">
                     {caseStudy.testimonial.content}

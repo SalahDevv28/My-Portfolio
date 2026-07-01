@@ -47,7 +47,7 @@ export default function NewsletterSignup() {
               Thanks for subscribing!
             </h3>
             <p className="text-gray-400">
-              You'll receive our latest updates and insights.
+              You&apos;ll receive our latest updates and insights.
             </p>
           </div>
         </div>

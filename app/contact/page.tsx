@@ -77,10 +77,10 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto relative">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-              Let's Build Something <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Intelligent</span>
+              Let&apos;s Build Something <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Intelligent</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Ready to transform your digital presence? Tell us about your project and we'll get back to you within 24 hours.
+              Ready to transform your digital presence? Tell us about your project and we&apos;ll get back to you within 24 hours.
             </p>
           </div>
         </div>
@@ -103,7 +103,7 @@ export default function ContactPage() {
                     Thank you for your message!
                   </h3>
                   <p className="text-gray-400">
-                    We'll get back to you within 24 hours.
+                    We&apos;ll get back to you within 24 hours.
                   </p>
                 </div>
               ) : (
@@ -284,7 +284,7 @@ export default function ContactPage() {
                   Book a Discovery Call
                 </h3>
                 <p className="text-gray-400 mb-4">
-                  Not sure what you need? Let's chat about your goals and find the perfect solution for your business.
+                  Not sure what you need? Let&apos;s chat about your goals and find the perfect solution for your business.
                 </p>
                 <a
                   href="https://calendly.com/salahdevv/request-a-call"

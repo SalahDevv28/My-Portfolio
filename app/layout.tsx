@@ -5,6 +5,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import LoadingScreen from '@/components/LoadingScreen'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -92,6 +93,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <body className="antialiased min-h-screen flex flex-col">
+        <LoadingScreen />
         <Header />
         <main className="flex-1">
           {children}

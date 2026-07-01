@@ -64,6 +64,16 @@
   background: #A855F7;
 }
 
+/* Loading screen logo animation (starts only after click) */
+@keyframes logoSpin {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+.animate-logo-spin {
+  animation: logoSpin 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
 /* Case studies carousel */
 @keyframes scrollLeft {
   0%   { transform: translateX(0) }

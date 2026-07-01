@@ -144,7 +144,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors">Design with Purpose</h3>
               <p className="text-gray-400 leading-relaxed mb-4">
-                Clean, intuitive design isn't just about aesthetics — it's about creating systems that people actually want to use.
+                Clean, intuitive design isn&apos;t just about aesthetics — it&apos;s about creating systems that people actually want to use.
               </p>
               <p className="text-gray-300 text-sm">
                 We craft workspaces that are both beautiful and functional, with careful attention to user experience and information architecture.
@@ -182,7 +182,7 @@ export default function HomePage() {
               Ready to Start Your Project?
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Let's discuss your project and see how we can help bring your vision to life.
+              Let&apos;s discuss your project and see how we can help bring your vision to life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a

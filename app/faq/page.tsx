@@ -77,7 +77,7 @@ export default function FAQPage() {
             </span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Everything you need to know about working with us. Can't find what you're looking for? Feel free to reach out.
+            Everything you need to know about working with us. Can&apos;t find what you&apos;re looking for? Feel free to reach out.
           </p>
         </div>
 
